@@ -1,0 +1,5 @@
+$NetBSD: distinfo,v 1.10 2022/09/15 19:22:11 leot Exp $
+
+BLAKE2s (stagit-1.2.tar.gz) = af61a43aa7c56b02a2782bdfc2adb1905184f7a793f87f8e3f267dac2b90eea0
+SHA512 (stagit-1.2.tar.gz) = f9d9f157145b47a14b5ff098e3db261b4739145e5e7cf2a273e188fc8617681dc9b7b9737de2182334bb9a50bef061ebee452ccbc1e013e14f2ef8c4a4c32d0b
+Size (stagit-1.2.tar.gz) = 19818 bytes

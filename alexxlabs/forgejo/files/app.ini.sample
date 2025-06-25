@@ -1,0 +1,82 @@
+APP_NAME = Forgejo: Git with a cup of tea
+RUN_MODE = prod
+
+[database]
+DB_TYPE = sqlite3
+# database 'PATH' is relative to 'HOME'
+PATH    = forgejo.db
+
+# ALL other 'pathes' are relative to 'workdir'
+
+[indexer]
+ISSUE_INDEXER_PATH   = indexers-sqlite/issues.bleve
+REPO_INDEXER_ENABLED = true
+REPO_INDEXER_PATH    = indexers-sqlite/repos.bleve
+
+[repository]
+ROOT = repos
+
+[repository.local]
+LOCAL_COPY_PATH = tmp/local-repo-sqlite
+LOCAL_WIKI_PATH = tmp/local-wiki-sqlite
+
+[server]
+HTTP_PORT        = 3000
+ROOT_URL         = https://git.alexxlabs.com/
+DISABLE_SSH      = false
+SSH_DOMAIN       = localhost
+SSH_LISTEN_HOST  = localhost
+SSH_PORT         = 2203
+START_SSH_SERVER = true
+OFFLINE_MODE     = false
+LFS_START_SERVER = true
+LFS_JWT_SECRET   = Tv_MjmZuHqpIY6GFl12ebgkRAMt4RlWt0v4EHKSXO0w
+APP_DATA_PATH    = data
+
+[lfs]
+PATH = data/lfs
+
+[mailer]
+ENABLED = false
+
+[service]
+REGISTER_EMAIL_CONFIRM            = false
+ENABLE_NOTIFY_MAIL                = false
+DISABLE_REGISTRATION              = false
+ENABLE_CAPTCHA                    = false
+REQUIRE_SIGNIN_VIEW               = false
+DEFAULT_KEEP_EMAIL_PRIVATE        = false
+DEFAULT_ALLOW_CREATE_ORGANIZATION = true
+NO_REPLY_ADDRESS                  = noreply.alexxlabs.com
+
+[picture]
+DISABLE_GRAVATAR        = false
+ENABLE_FEDERATED_AVATAR = false
+
+[session]
+PROVIDER = file
+
+[log]
+MODE      = console,file
+#
+# - relative to 'workdir'
+#ROOT_PATH = sqlite-log
+#
+# - or absolute
+ROOT_PATH = @VARBASE@/log/forgejo
+
+[log.console]
+LEVEL = Warn
+
+[log.file]
+LEVEL = Debug
+
+# Before running this configuration, make sure to change the
+# SECRET_KEY and the INTERNAL_TOKEN at the end of this file.
+# - SECRET_KEY is a password of your choosing,
+# - INTERNAL_TOKEN is a 64-byte random number in BASE64 encoding.
+# 	Your can generate the token using for example: openssl rand -base64 64
+[security]
+INSTALL_LOCK   = true
+INTERNAL_TOKEN = Fe/uarB3UPZ/tfdRlY6vcmdTMRlvJOQlnTnlAgEf4QNfKcHzjcYEz2X1mMms0ahJ+eIWze9aCWXnYw5vmSPkmng==
+SECRET_KEY     = gfhflbuvf

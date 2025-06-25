@@ -1,0 +1,9 @@
+$NetBSD$
+
+BLAKE2s (merecat-2.31.tar.xz) = 70853150e730acc60a2fe4217339565340f2fec4c6b4a6549eb2e179750e48cd
+SHA512 (merecat-2.31.tar.xz) = 49d1f2af866325daec41404effc816397accb4d399a7c4e23ccd50024a38354ad99fb223373344330a3e107d04826ea1f7683c811bf09610685582fe3f13662a
+Size (merecat-2.31.tar.xz) = 290872 bytes
+SHA1 (patch-src_libhttpd.c) = b41680fcc4efa1a81477fcb160878fa2d8b4e42f
+SHA1 (patch-src_md5.c) = 9e61a1fe0ce25fe5b775cd39c61a4014215a350e
+SHA1 (patch-src_md5.h) = b502f379017382964dd9964cd2a2bdb3973cfe49
+SHA1 (patch-src_merecat.c) = 6135d11be5cd7cbd4b9c8080d5c9d78ab3bd99c0

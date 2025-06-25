@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/forgejo
+share/examples/forgejo/app.ini.sample
+@pkgdir etc/forgejo

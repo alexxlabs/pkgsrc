@@ -1,0 +1,92 @@
+#
+# Sample Configuration for Forgejo using SQLite
+#
+# For information on the available settings, consult the online
+# documentation, or see the accompanying file app.ini.defaults, which
+# contains the settings incorporated into the 'forgejo' binary.
+#
+# This sample configuration runs Forgejo with a local database.
+# Before running this configuration, make sure to change the
+# SECRET_KEY and the INTERNAL_TOKEN at the end of this file.
+# - SECRET_KEY is a password of your choosing,
+# - INTERNAL_TOKEN is a 64-byte random number in BASE64 encoding.
+# 	Your can generate the token using for example: openssl rand -base64 64
+#
+# There are no pre-configured users; the first user to register becomes an
+# admin.  In this sample configuration, the HTTP server only listens on
+# localhost.
+#
+# If you'd rather use the web-based installer, remove this conf/app.ini file
+# and make @PKG_SYSCONFDIR@/app.ini writeable to the @FORGEJO_USER@ user.
+
+APP_NAME = Forgejo: Git with a cup of tea
+
+# RUN_USER: current OS username/$USER/$USERNAME e.g. git: The user Gitea will run as.
+# This should be a dedicated system (non-user) account.
+# Setting this incorrectly will cause Gitea to not start.
+RUN_USER = @FORGEJO_USER@
+
+# RUN_MODE: prod: Application run mode, affects performance and debugging: dev or prod, default is prod.
+# Mode dev makes Gitea easier to develop and debug, values other than dev are treated as prod
+# which is for production use.
+RUN_MODE = prod
+
+[database]
+DB_TYPE  = sqlite3
+#HOST     = 127.0.0.1:3306
+#NAME     = forgejo
+#PASSWD   = 
+PATH     = @VARBASE@/db/forgejo/forgejo.db
+#SSL_MODE = disable
+#USER     = root
+
+[indexer]
+ISSUE_INDEXER_PATH = @VARBASE@/db/forgejo/indexers/issues.bleve
+
+[log]
+ROOT_PATH = @VARBASE@/log/forgejo
+MODE      = file
+LEVEL     = Info
+
+[mailer]
+ENABLED = false
+
+[picture]
+AVATAR_UPLOAD_PATH      = @VARBASE@/db/forgejo/data/avatars
+DISABLE_GRAVATAR        = false
+ENABLE_FEDERATED_AVATAR = false
+
+[repository]
+ROOT = @VARBASE@/db/forgejo/forgejo-repositories
+# Gitea's default is 'bash', so if you have bash installed, you can comment this out.
+SCRIPT_TYPE = sh
+
+[repository.upload]
+TEMP_PATH = @VARBASE@/db/forgejo/data/tmp/uploads
+
+[security]
+INSTALL_LOCK = true
+INTERNAL_TOKEN = Fe/uarB3UPZ/tfdRlY6vcmdTMRlvJOQlnTnlAgEf4QNfKcHzjcYEz2X1mMms0ahJ+eIWze9aCWXnYw5vmSPkmng==
+SECRET_KEY   = gfhflbuvf
+
+[session]
+PROVIDER = file
+PROVIDER_CONFIG = @VARBASE@/db/forgejo/data/sessions
+
+[server]
+DOMAIN       = localhost
+HTTP_ADDR    = 127.0.0.1
+HTTP_PORT    = 3000
+ROOT_URL     = http://localhost:3000/
+DISABLE_SSH  = false
+SSH_DOMAIN   = %(DOMAIN)s
+SSH_PORT     = 22
+OFFLINE_MODE = false
+APP_DATA_PATH = @VARBASE@/db/forgejo/data
+
+[service]
+REGISTER_EMAIL_CONFIRM = false
+ENABLE_NOTIFY_MAIL     = false
+DISABLE_REGISTRATION   = false
+ENABLE_CAPTCHA         = true
+REQUIRE_SIGNIN_VIEW    = false

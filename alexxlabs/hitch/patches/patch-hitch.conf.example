@@ -1,0 +1,34 @@
+$NetBSD: patch-hitch.conf.example,v 1.3 2018/09/07 13:54:45 fhajny Exp $
+
+Sane default options.
+
+--- hitch.conf.example.orig	2018-04-19 09:02:26.000000000 +0000
++++ hitch.conf.example
+@@ -2,7 +2,7 @@
+ 
+ 
+ frontend = {
+-    host = "*"
++    host = "127.0.0.1"
+     port = "443"
+ }
+ backend = "[127.0.0.1]:6086"    # 6086 is the default Varnish PROXY port.
+@@ -12,8 +12,8 @@ daemon = on
+ 
+ # We strongly recommend you create a separate non-privileged hitch
+ # user and group
+-user = "hitch"
+-group = "hitch"
++user = "@HITCH_USER@"
++group = "@HITCH_GROUP@"
+ 
+ # Enable to let clients negotiate HTTP/2 with ALPN. (default off)
+ # alpn-protos = "h2, http/1.1"
+@@ -21,4 +21,6 @@ group = "hitch"
+ # run Varnish as backend over PROXY; varnishd -a :80 -a localhost:6086,PROXY ..
+ write-proxy-v2 = on             # Write PROXY header
+ 
+-
++pem-file = {
++    cert = "@HITCH_CERTS@"
++}

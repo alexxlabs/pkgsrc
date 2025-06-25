@@ -1,0 +1,8 @@
+===========================================================================
+$NetBSD: MESSAGE,v 1.2 2024/08/15 08:30:05 vins Exp $
+
+Sample configuration files have been installed at ${PKG_SYSCONFDIR}.
+
+Check the README available at ${DOCDIR}.
+
+===========================================================================
