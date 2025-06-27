@@ -16,13 +16,13 @@ DISTNAME=	hitch-1.8.0
 # EXTRACT_SUFX is .tar.gz by default, but can be changed freely.
 # Note that if your package requires additional distfiles to the default one,
 # you cannot just append the additional filenames using the += operator, but you have write for example:
-#DISTFILES=      ${DEFAULT_DISTFILES} additional-files.tar.gz
+# DISTFILES=      ${DEFAULT_DISTFILES} additional-files.tar.gz
 # Each distfile is fetched from a list of sites, usually MASTER_SITES.
 # If the package has multiple DISTFILES or multiple PATCHFILES from different sites,
 # you can set SITES.distfile to the list of URLs where the file distfile (including the suffix) can be found.
-#DISTFILES=      ${DISTNAME}${EXTRACT_SUFX}
-#DISTFILES+=     foo-file.tar.gz
-#SITES.foo-file.tar.gz= \
+# DISTFILES=      ${DISTNAME}${EXTRACT_SUFX}
+# DISTFILES+=     foo-file.tar.gz
+# SITES.foo-file.tar.gz= \
 #	https://www.somewhere.com/somehow/ \
 #	https://www.somewhereelse.com/mirror/somehow/
 
@@ -33,14 +33,14 @@ CATEGORIES=	alexxlabs
 # appended to it, *without an intermediate slash*. Therefore, all site values have to end with a slash or other
 # separator character. This allows for example to set MASTER_SITES to a URL of a CGI script that gets
 # the name of the distfile as a parameter. In this case, the definition would look like:
-#MASTER_SITES=   https://www.example.com/download.cgi?file=
+# MASTER_SITES=   https://www.example.com/download.cgi?file=
 # The exception to this rule are URLs starting with a *dash*. In that case the URL is taken as is,
 # fetched and the result stored under the name of the distfile. You can use this style for the case when
 # the download URL style does not match the above common case. For example, if permanent download URL is
 # a redirector to the real download URL, or the download file name is offered by an HTTP Content-Disposition header.
 # In the following example, foo-1.0.0.tar.gz will be created instead of the default v1.0.0.tar.gz.
-#DISTNAME=		foo-1.0.0
-#MASTER_SITES=	-https://www.example.com/archive/v1.0.0.tar.gz
+# DISTNAME=		foo-1.0.0
+# MASTER_SITES=	-https://www.example.com/archive/v1.0.0.tar.gz
 #
 # There are some predefined values for MASTER_SITES, which can be used in packages.
 # The names of the variables should speak for themselves
@@ -55,8 +55,8 @@ CATEGORIES=	alexxlabs
 # If you choose one of these predefined sites, you may want to specify a subdirectory of that site.
 # Since these macros may expand to more than one actual site, you must use the following construct
 # to specify a subdirectory:
-#MASTER_SITES=   ${MASTER_SITE_GNU:=sub/directory/name/}
-#MASTER_SITES=   ${MASTER_SITE_SOURCEFORGE:=project_name/}
+# MASTER_SITES=   ${MASTER_SITE_GNU:=sub/directory/name/}
+# MASTER_SITES=   ${MASTER_SITE_SOURCEFORGE:=project_name/}
 # Note the trailing slash after the subdirectory name.
 
 MASTER_SITES=	https://hitch-tls.org/source/
@@ -64,7 +64,7 @@ MASTER_SITES=	https://hitch-tls.org/source/
 # !!! To ensure you have all the source downloaded initially you can run the command:
 # % make fetch-list | sh
 # which will output and run a set of shell commands to fetch the necessary files into
-# the distfiles directory. 
+# the distfiles directory.
 
 # The 'fetch' phase makes sure that all the distfiles exist in a local directory
 # (DISTDIR, which can be set by the pkgsrc user). If the files do not exist,
@@ -219,9 +219,9 @@ MASTER_SITES=	https://hitch-tls.org/source/
 # variable and arguments to cmake by adding them to the CMAKE_ARGS variable. If you want to add arguments
 # only for particular stages, you can use the CMAKE_CONFIGURE_ARGS, CMAKE_BUILD_ARGS, and CMAKE_INSTALL_ARGS variables.
 # You can set the CONFIGURE_DIRS variable to the directories in which CMake should be run, relative to WRKSRC.
-# This defaults to to “.”.
+# This defaults to to '.'
 #
-# If there is no configure step at all, set NO_CONFIGURE to “yes”.
+# If there is no configure step at all, set NO_CONFIGURE to 'yes'
 #
 # ======================================================================================================
 # * The build phase	*
@@ -287,7 +287,7 @@ MASTER_SITES=	https://hitch-tls.org/source/
 # ======================================================================================================
 # !!! However, AFTER INSTALL phase
 # now that we have a populated DESTDIR, we can use the print-PLIST target to generate it for us:
-#$ bmake print-PLIST >PLIST
+#	bmake print-PLIST >PLIST
 # ======================================================================================================
 #
 # buildlink
@@ -310,7 +310,7 @@ MASTER_SITES=	https://hitch-tls.org/source/
 # one for each category in the CATEGORIES variable. PACKAGES defaults to pkgsrc/packages.
 #
 # * Verify *
-# Once we have a working package it’s worth doing a couple of checks to make sure everything looks ok:
+# Once we have a working package it's worth doing a couple of checks to make sure everything looks ok:
 #	: Check the package listing looks ok
 #	$ pkg_info -L augeas
 #
@@ -350,7 +350,7 @@ HITCH_CERTS?=		${PKG_SYSCONFDIR}/certs.pem
 HITCH_OCSP?=		${VARBASE}/db/hitch
 
 PKG_GROUPS+=	${HITCH_GROUP}
-PKG_USERS+=		${HITCH_USER}:${HITCH_GROUP}
+PKG_USERS+=	${HITCH_USER}:${HITCH_GROUP}
 PKG_GECOS.${HITCH_USER}= hitch daemon user
 
 RCD_SCRIPTS=		hitch
