@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.45 2025/04/07 15:26:08 nia Exp $
+# $NetBSD: Makefile,v 1.48 2025/07/02 11:01:31 jperkin Exp $
 
 .include "../../devel/gettext/Makefile.common"
 
 PKGNAME=	${DISTNAME:S/-/-tools-/}
+PKGREVISION=	1
 COMMENT=	Tools for providing messages in different languages
 
 DISTINFO_FILE=	${.CURDIR}/../../devel/gettext/distinfo
@@ -26,6 +27,10 @@ CONFIGURE_ENV+=		HAVE_JIKES_IN_PATH=
 GNU_CONFIGURE_STRICT=	no # because of gettext-runtime
 LDFLAGS.AIX+=		-Wl,-brtl
 
+# This is defined in the source but broken include ordering means it is not
+# defined too late to be activated for memset_s().
+CFLAGS.SunOS+=		-D__STDC_WANT_LIB_EXT1__=1
+
 SHLIBTOOL_OVERRIDE=	# empty
 INFO_FILES=		yes
 
@@ -43,10 +48,10 @@ CONFIGURE_ENV.AIX+=	ac_cv_header_wctype_h=no
 # atomics
 CFLAGS+=		-march=i486
 # cannot handle stat functions defined as macros by uw7 libc
-SUBST_CLASSES+=         offset
-SUBST_STAGE.offset=     pre-configure
-SUBST_FILES.offset=     */configure
-SUBST_SED.offset=       -e 's/FILE_OFFSET_BITS 64/FILE_OFFSET_BITS 32/g'
+SUBST_CLASSES+=		offset
+SUBST_STAGE.offset=	pre-configure
+SUBST_FILES.offset=	*/configure
+SUBST_SED.offset=	-e 's/FILE_OFFSET_BITS 64/FILE_OFFSET_BITS 32/g'
 SUBST_SED.offset+=	-e 's/FILE_OFFSET_BITS=64/FILE_OFFSET_BITS=32/g'
 .endif
 

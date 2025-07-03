@@ -1,5 +1,5 @@
-$NetBSD: distinfo,v 1.30 2024/11/19 22:46:12 adam Exp $
+$NetBSD: distinfo,v 1.32 2025/06/30 18:24:19 adam Exp $
 
-BLAKE2s (qtnetworkauth-everywhere-opensource-src-5.15.16.tar.xz) = 07b30751405416dd67c7a5bd03f9dfe2e6fc3a70a710f6e385e7fae14f923fd1
-SHA512 (qtnetworkauth-everywhere-opensource-src-5.15.16.tar.xz) = cbf112c1f9c03f6cf78de148da44639393a3a2df56116e85d51d674cb31c37ea45823c44b9839af021c1c7e7733eefd646fbaae52459088b03e3b00fd30b1d49
-Size (qtnetworkauth-everywhere-opensource-src-5.15.16.tar.xz) = 135600 bytes
+BLAKE2s (qtnetworkauth-everywhere-opensource-src-5.15.17.tar.xz) = a19dbf3e8661f62cb51a6ef977f2155d5635f3ba26758068aef663460513ff13
+SHA512 (qtnetworkauth-everywhere-opensource-src-5.15.17.tar.xz) = 3f1442c91b36d461646a49bdc27c61253e4ad6a909a19f452e101cd3e9428a3cced4408216a5f80d6662101ba9f9f0d5a0c721adc9bd1e203f66bebc9e03ea64
+Size (qtnetworkauth-everywhere-opensource-src-5.15.17.tar.xz) = 137840 bytes
