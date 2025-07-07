@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4480 2025/06/15 15:05:25 wiz Exp $
+# $NetBSD: Makefile,v 1.4482 2025/07/05 12:12:13 hauke Exp $
 #
 
 COMMENT=	Development utilities
@@ -159,6 +159,8 @@ SUBDIR+=	argtable
 SUBDIR+=	as31
 SUBDIR+=	asdf
 SUBDIR+=	asio
+SUBDIR+=	asl
+SUBDIR+=	asl-doc
 SUBDIR+=	aslc86k
 SUBDIR+=	asm2html
 SUBDIR+=	asmfmt
@@ -2791,7 +2793,6 @@ SUBDIR+=	py-macholib
 SUBDIR+=	py-makefun
 SUBDIR+=	py-mako
 SUBDIR+=	py-mando
-SUBDIR+=	py-manticore
 SUBDIR+=	py-maturin
 SUBDIR+=	py-mccabe
 SUBDIR+=	py-memcached
