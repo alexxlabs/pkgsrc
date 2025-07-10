@@ -1,4 +1,4 @@
-$NetBSD: TODO,v 1.25990 2025/07/07 19:55:24 wiz Exp $
+$NetBSD: TODO,v 1.25993 2025/07/08 20:49:48 wiz Exp $
 
 Suggested new packages
 ======================
@@ -959,7 +959,7 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html
 	o nvidia-texture-tools-2.1.1
 	o nxtvepg-2.8.1
 	o objc-3.3.24
-	o obs-studio-30.2
+	o obs-studio-31.1
 	o ocaml-5.2.1 [wip]
 	o ocaml-cppo-1.6.9
 	o ocaml-dune-3.19.1
@@ -986,6 +986,7 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html
 	o opendnssec-2.1.8
 	o opengrok-1.7.1
 	o openh323-1.19.1
+	o openimageio-2.5.19.0
 	o openmortal-0.7.1
 	o openmpi-5.0.5
 	o openmw-0.49.0
@@ -1269,6 +1270,7 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html
 	o terraform-provider-random-3.1.0
 	o tetrinetx-1.40c
 	o tfmxplay-1.1.6
+	o thunderbird-140.0
 	o thunderbird115-115.18.0
 	o tightvnc-2.7.10
 	o tile-0.7.4
