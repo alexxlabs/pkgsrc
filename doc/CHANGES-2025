@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2025,v 1.4219 2025/07/09 17:27:25 dkazankov Exp $
+$NetBSD: CHANGES-2025,v 1.4225 2025/07/10 14:03:47 dkazankov Exp $
 
 Changes to the packages collection and infrastructure in 2025:
 
@@ -6238,3 +6238,9 @@ Changes to the packages collection and infrastructure in 2025:
 	Updated lang/gcc13-gnat-libs to 13.4.0nb2 [dkazankov 2025-07-09]
 	Updated lang/gcc14-gnat to 14.3.0nb2 [dkazankov 2025-07-09]
 	Updated lang/gcc14-gnat-libs to 14.3.0nb3 [dkazankov 2025-07-09]
+	Updated www/hugo to 0.148.0 [triaxx 2025-07-10]
+	Added textproc/ada-xmlada-24 version 24.0.0 [dkazankov 2025-07-10]
+	Added devel/ada-libgpr-24 version 24.0.0 [dkazankov 2025-07-10]
+	Added devel/ada-gnatcoll-core-24 version 24.0.0 [dkazankov 2025-07-10]
+	Added lang/spark2014-13 version 13.3.0 [dkazankov 2025-07-10]
+	Added math/ada-adasat-24 version 24.0.0 [dkazankov 2025-07-10]
