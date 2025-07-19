@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.981 2025/05/30 17:31:48 jschauma Exp $
+# $NetBSD: Makefile,v 1.983 2025/07/16 21:42:07 wiz Exp $
 #
 
 COMMENT=	Security and cryptography tools and libraries
@@ -80,6 +80,9 @@ SUBDIR+=	cyrus-saslauthd
 SUBDIR+=	d0_blind_id
 SUBDIR+=	dcfldd
 SUBDIR+=	ddos-scan
+SUBDIR+=	defguard
+SUBDIR+=	defguard-gateway
+SUBDIR+=	defguard-proxy
 SUBDIR+=	dehydrated
 SUBDIR+=	destroy
 SUBDIR+=	dhbitty
@@ -344,6 +347,7 @@ SUBDIR+=	p5-Crypt-Rijndael
 SUBDIR+=	p5-Crypt-SMIME
 SUBDIR+=	p5-Crypt-SSLeay
 SUBDIR+=	p5-Crypt-SmbHash
+SUBDIR+=	p5-Crypt-SysRandom
 SUBDIR+=	p5-Crypt-Twofish
 SUBDIR+=	p5-Crypt-URandom
 SUBDIR+=	p5-Crypt-X509
