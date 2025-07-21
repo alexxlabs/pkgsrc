@@ -1,5 +1,6 @@
-# $NetBSD: Makefile,v 1.67 2024/08/20 13:58:32 adam Exp $
+# $NetBSD: Makefile,v 1.69 2025/07/20 09:34:13 wiz Exp $
 
+PKGREVISION= 1
 .include "version.mk"
 
 DISTNAME=	gstreamer-${GST_VERSION}
@@ -51,4 +52,5 @@ BUILDLINK_DEPMETHOD.gobject-introspection=	build
 .include "../../devel/gobject-introspection/buildlink3.mk"
 .include "../../devel/gmp/buildlink3.mk"
 .include "../../math/gsl/buildlink3.mk"
+.include "../../mk/atomic64.mk"
 .include "../../mk/bsd.pkg.mk"
