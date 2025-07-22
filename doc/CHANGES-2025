@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2025,v 1.4398 2025/07/20 21:15:20 wiz Exp $
+$NetBSD: CHANGES-2025,v 1.4410 2025/07/22 01:04:12 khorben Exp $
 
 Changes to the packages collection and infrastructure in 2025:
 
@@ -6194,6 +6194,7 @@ Changes to the packages collection and infrastructure in 2025:
 	Updated www/chromium to 138.0.7204.96 [kikadf 2025-07-07]
 	Updated graphics/chafa to 1.16.2 [ktnb 2025-07-07]
 	Updated misc/exercism to 3.5.6 [schmonz 2025-07-07]
+	Updated devel/plasma-wayland-protocols to 1.14.0 [abs 2025-07-07]
 	Updated devel/lxqt-build-tools to 2.2.1 [gutteridge 2025-07-08]
 	Updated sysutils/lxqt-powermanagement to 2.2.1 [gutteridge 2025-07-08]
 	Updated x11/lxqt-panel to 2.2.2 [gutteridge 2025-07-08]
@@ -6462,3 +6463,16 @@ Changes to the packages collection and infrastructure in 2025:
 	Updated devel/py-ruff to 0.12.4 [wiz 2025-07-20]
 	Updated textproc/py-pdf to 5.8.0 [wiz 2025-07-20]
 	Updated x11/pixman to 0.46.4 [wiz 2025-07-20]
+	Updated comms/asterisk21 to 21.10.0 [jnemeth 2025-07-21]
+	Updated textproc/py-tree-sitter to 0.25.0 [adam 2025-07-21]
+	Updated databases/py-apsw to 3.50.3.0 [adam 2025-07-21]
+	Updated security/easy-rsa to 3.2.3 [adam 2025-07-21]
+	Updated net/cppzmq to 4.11.0 [adam 2025-07-21]
+	Updated security/lasso to 2.8.2 [wiz 2025-07-21]
+	Updated security/py-lasso to 2.8.2 [wiz 2025-07-21]
+	Updated mail/mu to 1.12.12 [ktnb 2025-07-21]
+	Updated fonts/harfbuzz to 11.3.0 [wiz 2025-07-21]
+	Updated fonts/harfbuzz-icu to 11.3.0 [wiz 2025-07-21]
+	Updated shells/bash to 5.3nb1 [kim 2025-07-21]
+	Updated sysutils/yazi to 25.5.31nb1 [wiz 2025-07-21]
+	Updated www/gitea to 1.23.8 [khorben 2025-07-22]
