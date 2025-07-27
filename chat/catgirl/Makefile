@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.6 2024/05/06 08:40:21 jperkin Exp $
+# $NetBSD: Makefile,v 1.8 2025/07/25 19:30:09 vins Exp $
 
-DISTNAME=	catgirl-2.2
+DISTNAME=	catgirl-2.2a
 PKGREVISION=	1
 CATEGORIES=	chat
 MASTER_SITES=	https://git.causal.agency/catgirl/snapshot/
 
-MAINTAINER=	pkgsrc-users@NetBSD.org
+MAINTAINER=	vins@NetBSD.org
 HOMEPAGE=	https://git.causal.agency/catgirl/about/
 COMMENT=	TLS-only terminal IRC client
 LICENSE=	gnu-gpl-v3

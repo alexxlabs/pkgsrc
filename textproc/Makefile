@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1526 2025/07/22 11:07:39 wiz Exp $
+# $NetBSD: Makefile,v 1.1528 2025/07/26 08:59:07 pin Exp $
 #
 
 COMMENT=	Text processing utilities (does not include desktop publishing)
@@ -517,6 +517,7 @@ SUBDIR+=	libdom
 SUBDIR+=	libexttextcat
 SUBDIR+=	libfastjson
 SUBDIR+=	libfyaml
+SUBDIR+=	libgrapheme
 SUBDIR+=	libhighlight
 SUBDIR+=	libkolabxml
 SUBDIR+=	liblinebreak
@@ -1492,6 +1493,7 @@ SUBDIR+=	wdiff
 SUBDIR+=	word2vec
 SUBDIR+=	writer2latex
 SUBDIR+=	xalan-j
+SUBDIR+=	xan
 SUBDIR+=	xapian
 SUBDIR+=	xapian-omega
 SUBDIR+=	xerces-c

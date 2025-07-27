@@ -1,4 +1,4 @@
-$NetBSD: TODO,v 1.26036 2025/07/23 19:19:11 ryoon Exp $
+$NetBSD: TODO,v 1.26043 2025/07/26 14:13:09 ryoon Exp $
 
 Suggested new packages
 ======================
@@ -441,7 +441,6 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html
 	o apache-cassandra2-2.2.19
 	o apache-tomcat85-8.5.65
 	o apache-tomcat9-9.0.45
-	o apache2-2.4.64
 	o apollo-1.7
 	o argtable-2.9
 	o argus-20121202
@@ -566,7 +565,6 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html
 	o dotclear-2.33.1
 	o drawpile-2.1.20
 	o drivel-3.0.5
-	o dropbear-2025.88
 	o drupal-10.0.5
 	o drupal-9.5.5
 	o eagle-8.1.0
@@ -620,7 +618,6 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html
 	o felt-3.07 [wip]
 	o fet-6.0.1
 	o filerunner-14.06.18.10
-	o firefox-141.0
 	o firefox115-115.24.0
 	o fish-4.0.0
 	o flashplayer-0.4.13
@@ -656,13 +653,14 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html
 	o gcc-mips-current-7.1.0
 	o gcin-1.5.5
 	o gcombust-0.1.55
-	o gdb-16.1
+	o gdb-16.3
 	o gdb7-7.12
 	o geneweb-7.0.0
 	o gens-2.15.5
 	o gfract-0.33
 	o ghdl-5.1.0
 	o git-cinnabar-0.7.2
+	o gitea-1.24.3
 	o gjs-1.70.1
 	o gkrellm-2.4.0
 	o gkrellm-multiping-2.0.13
@@ -937,7 +935,8 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html
 	o mtail-1.2.0
 	o muse-0.9.2
 	o musescore-4.2 [now has a fixed ALSA dependency, and some features were removed]
-	o mysql-8.4.2 (LTS)
+	o mysql-8.0.43
+	o mysql-8.4.6 (LTS)
 	o mysql-workbench-8.0.23
 	o nagios-ncsa-2.10.0
 	o nagios-plugin-dnsrbl-0.5
@@ -1241,7 +1240,7 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html
 	o tads-3.0.16
 	o taplo-lsp-0.7.0
 	o tc-hasida-table-0.8 [wip]
-	o tcl-9.0 [wip]
+	o tcl-9.0.2 [wip]
 	o tcl-tDOM-0.9.2
 	o tcpdpriv-0.9
 	o tcpdstat-0.9
@@ -1269,7 +1268,7 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html
 	o thunderbird115-115.18.0
 	o tightvnc-2.7.10
 	o tile-0.7.4
-	o tk-9.0 [wip]
+	o tk-9.0.2 [wip]
 	o tkcon-2.7.3
 	o tkhylafax-3.2
 	o tkinfo-2.11
