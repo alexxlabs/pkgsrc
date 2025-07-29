@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.765 2025/07/17 05:00:16 dkazankov Exp $
+# $NetBSD: Makefile,v 1.767 2025/07/28 07:00:55 dkazankov Exp $
 #
 
 COMMENT=	Programming languages
@@ -339,6 +339,7 @@ SUBDIR+=	smlnj
 SUBDIR+=	snobol
 SUBDIR+=	spago
 SUBDIR+=	spark2014-13
+SUBDIR+=	spark2014-14
 SUBDIR+=	spidermonkey
 SUBDIR+=	spidermonkey185
 SUBDIR+=	spl
@@ -355,6 +356,7 @@ SUBDIR+=	swi-prolog-packages
 SUBDIR+=	tcl
 SUBDIR+=	tcl-expect
 SUBDIR+=	tcl-otcl
+SUBDIR+=	tcl90
 SUBDIR+=	tcltutor
 SUBDIR+=	tclx
 SUBDIR+=	tinyscheme

@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.1 2025/07/26 13:37:32 vins Exp $
+# $NetBSD: Makefile,v 1.3 2025/07/26 21:41:39 vins Exp $
 
 DISTNAME=	telescope-0.11
+PKGREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	https://ftp.telescope-browser.org/
 
@@ -15,14 +16,13 @@ USE_TOOLS+=	autoconf automake autoreconf \
 USE_CURSES=	wide
 FAKE_NCURSES=	yes
 
-DEPENDS+=	xdg-utils-[0-9]*:../../misc/xdg-utils
-
-CFLAGS.NetBSD+=		-D_OPENBSD_SOURCE   # strtonum()
+CFLAGS.NetBSD+=		-D_OPENBSD_SOURCE	# strtonum()
+CFLAGS.SunOS+=		-D__EXTENSIONS__ -D_XOPEN_SOURCE=600 # CMSG_ functions
+LDFLAGS.SunOS+=		-lxnet
 
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	YACC=${YACC:Q}
 CONFIGURE_ARGS+=	--with-default-editor=vi
-CONFIGURE_ARGS+=	--with-default-opener=xdg-open
 
 .include "../../mk/bsd.prefs.mk"
 
@@ -31,7 +31,7 @@ CONFIGURE_ARGS+=	--with-default-opener=xdg-open
 CONFIGURE_ARGS+=	--with-libimsg
 .endif
 
-.if ${OPSYS} == "SunOS" || ${OPSYS} == "Linux"
+.if ${OPSYS} == "Linux"
 .  include "../../devel/libbsd/buildlink3.mk"
 CONFIGURE_ARGS+=	--with-libbsd
 .endif

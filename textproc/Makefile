@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1528 2025/07/26 08:59:07 pin Exp $
+# $NetBSD: Makefile,v 1.1532 2025/07/28 13:31:36 dkazankov Exp $
 #
 
 COMMENT=	Text processing utilities (does not include desktop publishing)
@@ -49,6 +49,8 @@ SUBDIR+=	R-xml2
 SUBDIR+=	R-xmlparsedata
 SUBDIR+=	R-yaml
 SUBDIR+=	WordNet
+SUBDIR+=	ada-prettier-ada-25
+SUBDIR+=	ada-vss-25
 SUBDIR+=	ada-xmlada-24
 SUBDIR+=	ada-xmlada-25
 SUBDIR+=	aha
@@ -1195,6 +1197,7 @@ SUBDIR+=	py-sgmllib3k
 SUBDIR+=	py-smartypants
 SUBDIR+=	py-snowballstemmer
 SUBDIR+=	py-sphinx
+SUBDIR+=	py-sphinx-argparse
 SUBDIR+=	py-sphinx-astropy
 SUBDIR+=	py-sphinx-autoapi
 SUBDIR+=	py-sphinx-autodoc-typehints
@@ -1235,6 +1238,7 @@ SUBDIR+=	py-tomli
 SUBDIR+=	py-tomli_w
 SUBDIR+=	py-tomlkit
 SUBDIR+=	py-tree-sitter
+SUBDIR+=	py-types-docutils
 SUBDIR+=	py-types-yaml
 SUBDIR+=	py-typogrify
 SUBDIR+=	py-uc-micro-py
