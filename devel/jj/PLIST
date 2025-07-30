@@ -1,2 +1,5 @@
-@comment $NetBSD: PLIST,v 1.2 2023/10/13 09:57:34 pin Exp $
+@comment $NetBSD: PLIST,v 1.4 2025/07/29 17:25:00 wiz Exp $
 bin/jj
+share/bash-completion/completions/jj
+share/fish/vendor_completions.d/jj.fish
+share/zsh/site-functions/_jj
