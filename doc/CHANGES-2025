@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2025,v 1.4594 2025/07/30 08:59:17 pin Exp $
+$NetBSD: CHANGES-2025,v 1.4601 2025/07/30 15:36:33 ktnb Exp $
 
 Changes to the packages collection and infrastructure in 2025:
 
@@ -6697,3 +6697,13 @@ Changes to the packages collection and infrastructure in 2025:
 	Updated misc/tui-journal to 0.16.1 [pin 2025-07-30]
 	Updated shells/oh-my-posh to 26.17.2 [pin 2025-07-30]
 	Updated shells/oh-my-posh to 26.17.3 [pin 2025-07-30]
+	Updated textproc/py-regex to 2025.7.31 [adam 2025-07-30]
+	Updated security/py-truststore to 0.10.3 [adam 2025-07-30]
+	Updated multimedia/mkvtoolnix to 94.0 [adam 2025-07-30]
+	Updated net/iperf3 to 3.19.1 [adam 2025-07-30]
+	Updated www/py-aiohttp to 3.12.15 [adam 2025-07-30]
+	Updated shells/nushell to 0.106.1 [pin 2025-07-30]
+	Updated devel/git-cliff to 2.10.0 [pin 2025-07-30]
+	Updated devel/lazygit to 0.53.0 [pin 2025-07-30]
+	Updated textproc/mandoc to 1.14.6nb3 [wiz 2025-07-30]
+	Updated math/suitesparse to 7.11.0 [ktnb 2025-07-30]
