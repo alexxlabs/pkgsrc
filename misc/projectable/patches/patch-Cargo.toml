@@ -1,8 +1,8 @@
-$NetBSD: patch-Cargo.toml,v 1.1 2025/07/22 11:30:40 he Exp $
+$NetBSD: patch-Cargo.toml,v 1.3 2025/07/31 08:07:29 pin Exp $
 
 Add use of portable_atomic.
 
---- Cargo.toml.orig	2025-07-22 05:36:03.499677600 +0000
+--- Cargo.toml.orig	2025-07-31 07:30:54.938424143 +0000
 +++ Cargo.toml
 @@ -47,6 +47,7 @@ itertools = "0.10.5"
  log = { version = "0.4.17", features = ["serde"] }
