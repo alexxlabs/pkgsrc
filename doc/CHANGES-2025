@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2025,v 1.4659 2025/08/02 20:48:14 wiz Exp $
+$NetBSD: CHANGES-2025,v 1.4688 2025/08/04 01:51:27 ktnb Exp $
 
 Changes to the packages collection and infrastructure in 2025:
 
@@ -6781,3 +6781,32 @@ Changes to the packages collection and infrastructure in 2025:
 	Updated audio/mpg123 to 1.33.1 [adam 2025-08-02]
 	Updated devel/mise to 2025.8.2 [pin 2025-08-02]
 	Updated sysutils/fzf to 0.65.0nb1 [wiz 2025-08-02]
+	Updated graphics/ximaging to 1.9 [vins 2025-08-03]
+	Updated sysutils/xfile to 1.0 [vins 2025-08-03]
+	Updated security/p5-Crypt-CBC to 3.07 [wiz 2025-08-03]
+	Updated net/p5-Net-DNS to 1.52 [wiz 2025-08-03]
+	Updated devel/p5-Proc-ProcessTable to 0.637 [wiz 2025-08-03]
+	Updated devel/p5-Scalar-List-Utils to 1.70 [wiz 2025-08-03]
+	Updated fonts/noto-emoji-ttf to 2.048 [wiz 2025-08-03]
+	Updated security/zxcvbn-c to 2.6 [wiz 2025-08-03]
+	Updated textproc/enchant2 to 2.8.12 [wiz 2025-08-03]
+	Updated textproc/inih to 61 [wiz 2025-08-03]
+	Updated graphics/jasper to 4.2.7 [wiz 2025-08-03]
+	Updated devel/gopls to 0.20.0 [wiz 2025-08-03]
+	Updated textproc/py-docutils to 0.22 [wiz 2025-08-03]
+	Updated devel/py-build to 1.3.0 [wiz 2025-08-03]
+	Updated devel/py-maturin to 1.9.2 [wiz 2025-08-03]
+	Updated graphics/py-pillow_heif to 1.1.0 [wiz 2025-08-03]
+	Updated devel/py-ruff to 0.12.7 [wiz 2025-08-03]
+	Updated comms/py-textual to 5.2.0 [wiz 2025-08-03]
+	Updated textproc/py-pdf to 5.9.0 [wiz 2025-08-03]
+	Updated sysutils/lf to 34nb4 [wiz 2025-08-03]
+	Updated devel/objfw to 1.4 [js 2025-08-03]
+	Updated www/chromium to 138.0.7204.183 [kikadf 2025-08-03]
+	Updated cad/py-PyRTL to 0.12 [ryoon 2025-08-03]
+	Updated x11/gtk3 to 3.24.49 [ryoon 2025-08-03]
+	Updated databases/duckdb to 1.3.2 [ryoon 2025-08-03]
+	Updated databases/py-duckdb to 1.3.2 [ryoon 2025-08-03]
+	Updated devel/py-protobuf to 6.31.1nb1 [ryoon 2025-08-03]
+	Updated misc/dpkg to 1.22.21nb1 [wiz 2025-08-03]
+	Updated news/newsraft to 0.32 [ktnb 2025-08-03]
