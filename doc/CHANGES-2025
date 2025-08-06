@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2025,v 1.4688 2025/08/04 01:51:27 ktnb Exp $
+$NetBSD: CHANGES-2025,v 1.4703 2025/08/05 06:15:49 adam Exp $
 
 Changes to the packages collection and infrastructure in 2025:
 
@@ -6810,3 +6810,25 @@ Changes to the packages collection and infrastructure in 2025:
 	Updated devel/py-protobuf to 6.31.1nb1 [ryoon 2025-08-03]
 	Updated misc/dpkg to 1.22.21nb1 [wiz 2025-08-03]
 	Updated news/newsraft to 0.32 [ktnb 2025-08-03]
+	Added devel/py-assertpy version 1.1 [wiz 2025-08-04]
+	Added devel/py-cucumber-expressions version 18.0.1 [wiz 2025-08-04]
+	Added devel/py-cucumber-tag-expressions version 6.2.0 [wiz 2025-08-04]
+	Updated devel/py-behave to 1.3.0 [wiz 2025-08-04]
+	Updated mail/himalaya to 1.1.0nb1 [wiz 2025-08-04]
+	Updated lang/nodejs22 to 22.18.0 [adam 2025-08-04]
+	Updated lang/nodejs to 24.5.0 [adam 2025-08-04]
+	Updated lang/racket to 8.15nb4 [wiz 2025-08-04]
+	Updated graphics/ImageMagick6 to 6.9.13.26 [kikadf 2025-08-04]
+	Updated devel/mise to 2025.8.4 [pin 2025-08-04]
+	Updated chat/senpai to 0.4.1 [pin 2025-08-04]
+	Updated comms/asterisk18 to 18.26.3 [jnemeth 2025-08-04]
+	Updated comms/asterisk21 to 21.10.1 [jnemeth 2025-08-04]
+	Downgraded textproc/py-docutils to 0.21.2nb1 [wiz 2025-08-03]
+	Updated devel/py-anyio to 4.10.0 [adam 2025-08-05]
+	Updated security/py-gnupg to 0.5.5 [adam 2025-08-05]
+	Updated devel/py-poetry to 2.1.4 [adam 2025-08-05]
+	Updated lang/py-findpython to 0.7.0 [adam 2025-08-05]
+	Updated security/libgcrypt to 1.11.2 [adam 2025-08-05]
+	Updated net/py-zmq to 27.0.1 [adam 2025-08-05]
+	Updated devel/py-maturin to 1.9.3 [adam 2025-08-05]
+	Updated devel/py-path to 17.1.1 [adam 2025-08-05]
