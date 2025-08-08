@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2025/06/04 14:15:56 adam Exp $
+# $NetBSD: Makefile,v 1.22 2025/08/07 14:23:18 wiz Exp $
 
 .include "dist.mk"
 
@@ -52,11 +52,16 @@ PTHREAD_OPTS+=	require
 
 .include "../../mk/bsd.prefs.mk"
 
+PLIST_VARS+=	uuid
+
 # NetBSD-8 curses has enough support for py-curses
-USE_CURSES=		getsyx update_panels wide
+USE_CURSES=	getsyx update_panels wide
 # But we build as ncurses still to get the full feature set easily
 .if ${OPSYS} == "NetBSD"
-FAKE_NCURSES=		yes
+FAKE_NCURSES=	yes
+.else
+# https://github.com/python/cpython/issues/124228
+PLIST.uuid=	yes
 .endif
 
 .if ${USE_CROSS_COMPILE:tl} == yes
