@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2025,v 1.4748 2025/08/07 19:54:33 pin Exp $
+$NetBSD: CHANGES-2025,v 1.4762 2025/08/08 23:47:50 wen Exp $
 
 Changes to the packages collection and infrastructure in 2025:
 
@@ -6895,3 +6895,22 @@ Changes to the packages collection and infrastructure in 2025:
 	Updated devel/mise to 2025.8.7 [pin 2025-08-07]
 	Added textproc/television version 0.13.2 [pin 2025-08-07]
 	Updated textproc/scooter to 0.6.0 [pin 2025-08-07]
+	Updated security/hashcat to 7.0.0 [adam 2025-08-08]
+	Updated databases/tdb to 1.4.14 [adam 2025-08-08]
+	Updated net/rtmpdump to 2.6.0.0.6f6bb1353fc84f4cc37138baa99f586750028a01 [wiz 2025-08-08]
+	Updated databases/postgresql-timescaledb to 2.21.2 [adam 2025-08-08]
+	Updated archivers/zlib-ng to 2.2.5 [adam 2025-08-08]
+	Updated devel/py-pebble to 5.1.3 [adam 2025-08-08]
+	Updated www/py-publicsuffixlist to 1.0.2.20250802 [adam 2025-08-08]
+	Updated lang/python313 to 3.13.6nb1 [ryoon 2025-08-08]
+	Updated x11/xf86-video-amdgpu to 25.0.0 [wiz 2025-08-08]
+	Updated devel/py-types-setuptools to 80.9.0.20250801 [adam 2025-08-08]
+	Updated devel/py-packageurl to 0.17.5 [adam 2025-08-08]
+	Updated security/py-argon2-cffi-bindings to 25.1.0 [adam 2025-08-08]
+	Updated devel/py-ruff to 0.12.8 [adam 2025-08-08]
+	Updated net/erlang-xmpp to 1.11.0 [gdt 2025-08-08]
+	Updated chat/ejabberd to 25.07 [gdt 2025-08-08]
+	Updated editors/vim-share to 9.1.1572nb1 [morr 2025-08-08]
+	Updated devel/p5-Test-File to 1.995 [wen 2025-08-08]
+	Updated devel/p5-Test-Future-IO-Impl to 0.15 [wen 2025-08-08]
+	Updated devel/p5-Test-Inter to 1.12 [wen 2025-08-08]
