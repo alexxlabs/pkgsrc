@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.709 2025/07/03 15:47:24 wiz Exp $
+# $NetBSD: Makefile,v 1.711 2025/08/10 13:44:51 ryoon Exp $
 #
 
 COMMENT=	Audio tools, players, and libraries
@@ -43,6 +43,7 @@ SUBDIR+=	bmp
 SUBDIR+=	bmp-crossfade
 SUBDIR+=	bmp-mac
 SUBDIR+=	bmp-pulse
+SUBDIR+=	boca
 SUBDIR+=	buzztrax
 SUBDIR+=	cam
 SUBDIR+=	cd-discid
@@ -120,6 +121,7 @@ SUBDIR+=	flactag
 SUBDIR+=	flite
 SUBDIR+=	fluidsynth
 SUBDIR+=	forked-daapd
+SUBDIR+=	freac
 SUBDIR+=	freealut
 SUBDIR+=	freepats
 SUBDIR+=	freeswitch-music

@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.11 2024/08/25 06:19:15 wiz Exp $
+# $NetBSD: Makefile,v 1.13 2025/08/11 12:33:23 wiz Exp $
 
-DISTNAME=	json-schema-1.3
-PKGREVISION=	3
+DISTNAME=	json-schema-1.4
 CATEGORIES=	textproc
 MASTER_SITES=	${MASTER_SITE_GITHUB:=nfotex/}
 GITHUB_RELEASE=	${DISTNAME}
@@ -14,8 +13,9 @@ LICENSE=	modified-bsd
 
 USE_LANGUAGES=		c c++
 USE_TOOLS+=		perl:test pkg-config
-CMAKE_CONFIGURE_ARGS+=		-DBUILD_SHARED_LIBS=ON
 TEST_TARGET=		test
+
+CMAKE_CONFIGURE_ARGS+=		-DBUILD_SHARED_LIBS=ON
 
 .include "../../devel/cmake/build.mk"
 .include "../../devel/pcre/buildlink3.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: pkg-vulnerabilities,v 1.486 2025/08/04 13:22:03 kikadf Exp $
+# $NetBSD: pkg-vulnerabilities,v 1.490 2025/08/12 17:41:33 morr Exp $
 #
 #FORMAT 1.0.0
 #
@@ -23052,7 +23052,7 @@ zabbix-[0-9]*	security-bypass	https://nvd.nist.gov/vuln/detail/CVE-2022-24349
 gitea<1.16.4	security-bypass	https://nvd.nist.gov/vuln/detail/CVE-2022-0905
 libcaca-[0-9]*	denial-of-service	https://nvd.nist.gov/vuln/detail/CVE-2022-0856
 php{56,70,71,72,73,74,80}-phpmyadmin<4.9.10	cross-site-scripting	https://nvd.nist.gov/vuln/detail/CVE-2022-0813
-keepass-[0-9]*	sensitive-information-disclosure	https://nvd.nist.gov/vuln/detail/CVE-2022-0725
+keepass<2.59	sensitive-information-disclosure	https://nvd.nist.gov/vuln/detail/CVE-2022-0725
 ming-[0-9]*	out-of-bounds-read	https://nvd.nist.gov/vuln/detail/CVE-2021-34342
 ming-[0-9]*	denial-of-service	https://nvd.nist.gov/vuln/detail/CVE-2021-34341
 ming-[0-9]*	denial-of-service	https://nvd.nist.gov/vuln/detail/CVE-2021-34340
@@ -27271,3 +27271,10 @@ iperf3<3.19.1	heap-overflow			https://nvd.nist.gov/vuln/detail/CVE-2025-54349
 iperf3<3.19.1	denial-of-service		https://nvd.nist.gov/vuln/detail/CVE-2025-54350
 iperf3<3.19.1	buffer-overflow			https://nvd.nist.gov/vuln/detail/CVE-2025-54351
 p5-Crypt-CBC<3.07	lack-of-entropy	https://nvd.nist.gov/vuln/detail/CVE-2025-2814
+poppler-utils-[0-9]*	denial-of-service	https://nvd.nist.gov/vuln/detail/CVE-2025-50420
+cairo-[0-9]*	null-pointer-dereference	https://nvd.nist.gov/vuln/detail/CVE-2025-50422
+mupdf<1.26.0	denial-of-service	https://nvd.nist.gov/vuln/detail/CVE-2025-46206
+SOGo-[0-9]*	authorization-bypass	https://nvd.nist.gov/vuln/detail/CVE-2025-50340
+7-zip<25.01	arbitrary-file-write	https://nvd.nist.gov/vuln/detail/CVE-2025-55188
+vim>=9.1.1231<9.1.1400	use-after-free	https://github.com/vim/vim/security/advisories/GHSA-3r4f-mm4w-wgg6
+vim>=9.1.1231<9.1.1406	double-free	https://github.com/vim/vim/security/advisories/GHSA-5fg8-wvx3-583x

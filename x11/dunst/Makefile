@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.46 2025/04/24 14:16:08 wiz Exp $
+# $NetBSD: Makefile,v 1.48 2025/08/10 10:32:41 wiz Exp $
 
-DISTNAME=	dunst-1.12.2
-PKGREVISION=	2
+DISTNAME=	dunst-1.13.0
 CATEGORIES=	x11
 MASTER_SITES=	${MASTER_SITE_GITHUB:=dunst-project/}
 GITHUB_TAG=	v${PKGVERSION_NOREV}
@@ -15,7 +14,8 @@ USE_TOOLS+=	bash:test gmake pod2man pkg-config
 
 # FAIL test_calculate_dimensions_height_min: dim.h == expected_height (test/draw.c:321) (0 ticks, 0.000 sec)
 # FAIL test_pattern_match: rule_field_matches_string("asd", "") (test/rules.c:44) (0 ticks, 0.000 sec)
-# Pass: 196, fail: 2, skip: 0.
+# Total: 202 tests (3 ticks, 0.030 sec), 2643 assertions
+# Pass: 200, fail: 2, skip: 0.
 TEST_TARGET=	test
 
 MAKE_FLAGS+=	SYSTEMD=0
@@ -28,7 +28,7 @@ REPLACE_BASH+=	test/test-install.sh
 SUBST_CLASSES+=			fix-paths
 SUBST_STAGE.fix-paths=		pre-configure
 SUBST_MESSAGE.fix-paths=	Fixing absolute paths.
-SUBST_FILES.fix-paths=		dunstrc docs/dunst.1.pod
+SUBST_FILES.fix-paths=		dunstrc
 SUBST_FILES.fix-paths+=		docs/dunst.5.pod
 SUBST_FILES.fix-paths+=		src/icon-lookup.c
 SUBST_FILES.fix-paths+=		src/settings_data.h

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.46 2024/08/25 06:18:51 wiz Exp $
+# $NetBSD: Makefile,v 1.48 2025/08/11 12:25:50 wiz Exp $
 
 DISTNAME=	lensfun-0.3.4
 PKGREVISION=	1

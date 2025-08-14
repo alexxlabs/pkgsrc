@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.34 2024/11/24 00:52:59 gdt Exp $
+# $NetBSD: Makefile,v 1.36 2025/08/13 05:59:09 wiz Exp $
 
-DISTNAME=	xmpppy-0.7.1
+DISTNAME=	xmpppy-0.7.2
 PKGNAME=	${PYPKGPREFIX}-${DISTNAME}
-PKGREVISION=	6
 CATEGORIES=	chat python
 MASTER_SITES=	${MASTER_SITE_GITHUB:=xmpppy/}
 GITHUB_PROJECT=	xmpppy
@@ -11,6 +10,8 @@ MAINTAINER=	gdt@NetBSD.org
 HOMEPAGE=	https://xmpppy.sourceforge.net/
 COMMENT=	XMPP (Jabber) library for Python
 LICENSE=	gnu-gpl-v2
+
+TOOL_DEPENDS+=	${PYPKGPREFIX}-setuptools-[0-9]*:../../devel/py-setuptools
 
 USE_LANGUAGES=	# none
 
@@ -45,5 +46,5 @@ post-install:
 		${DESTDIR}${DOCDIR}
 
 .include "../../lang/python/batteries-included.mk"
-.include "../../lang/python/egg.mk"
+.include "../../lang/python/wheel.mk"
 .include "../../mk/bsd.pkg.mk"

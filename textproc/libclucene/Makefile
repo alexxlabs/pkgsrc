@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.41 2024/12/29 15:09:59 adam Exp $
+# $NetBSD: Makefile,v 1.43 2025/08/11 12:06:40 wiz Exp $
 
 DISTNAME=		clucene-core-2.3.3.4
 PKGNAME=		lib${DISTNAME:S/-core-/-/}
@@ -14,8 +14,11 @@ LICENSE=		gnu-lgpl-v2.1 OR apache-2.0
 PKGCONFIG_OVERRIDE+=	libclucene-core.pc.in
 
 USE_LANGUAGES=	c c++
-CMAKE_CONFIGURE_ARGS+=	-DBUILD_CONTRIBS_LIB=ON
 USE_LIBTOOL=	yes
+
+CMAKE_CONFIGURE_ARGS+=	-DBUILD_CONTRIBS_LIB=ON
+# https://sourceforge.net/p/clucene/bugs/236/
+CMAKE_CONFIGURE_ARGS+=	-DCMAKE_POLICY_VERSION_MINIMUM=3.5
 
 .include "../../devel/cmake/build.mk"
 .include "../../devel/boost-libs/buildlink3.mk"

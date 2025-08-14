@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4506 2025/08/04 08:01:09 wiz Exp $
+# $NetBSD: Makefile,v 1.4510 2025/08/12 18:13:54 hauke Exp $
 #
 
 COMMENT=	Development utilities
@@ -967,6 +967,7 @@ SUBDIR+=	libbegemot
 SUBDIR+=	libbinio
 SUBDIR+=	libblkid
 SUBDIR+=	libbsd
+SUBDIR+=	libbstring
 SUBDIR+=	libcbor
 SUBDIR+=	libcerf
 SUBDIR+=	libcompizconfig
@@ -1855,6 +1856,7 @@ SUBDIR+=	p5-Log-Message-Simple
 SUBDIR+=	p5-Log-Report
 SUBDIR+=	p5-Log-Report-Optional
 SUBDIR+=	p5-Log-Trace
+SUBDIR+=	p5-Long-Jump
 SUBDIR+=	p5-MRO-Compat
 SUBDIR+=	p5-Mac-Carbon
 SUBDIR+=	p5-Mac-SystemDirectory
@@ -3590,6 +3592,7 @@ SUBDIR+=	ruby-uglifier
 SUBDIR+=	ruby-uuidtools
 SUBDIR+=	ruby-validatable
 SUBDIR+=	ruby-version_gem
+SUBDIR+=	ruby-whirly
 SUBDIR+=	ruby-wisper
 SUBDIR+=	ruby-wmi-lite
 SUBDIR+=	ruby-yell
@@ -3628,6 +3631,7 @@ SUBDIR+=	slibtool
 SUBDIR+=	sloccount
 SUBDIR+=	smake
 SUBDIR+=	sml-mode
+SUBDIR+=	smooth
 SUBDIR+=	snappy
 SUBDIR+=	snappy-java10
 SUBDIR+=	sofia-sip

@@ -1,12 +1,11 @@
-# $NetBSD: Makefile,v 1.22 2025/07/05 12:30:16 hauke Exp $
+# $NetBSD: Makefile,v 1.24 2025/08/13 09:03:26 hauke Exp $
 
 GITHUB_PROJECT=	netatalk
 GITHUB_TAG=	refs/tags/${DISTNAME}
 DISTNAME=	netatalk-${PKGVER:C/\./-/g}
-PKGREVISION=	1
 
 PKGNAME=	${DISTNAME:C/-[0-9].*$//}-${PKGVER}
-PKGVER=		4.2.4
+PKGVER=		4.3.0
 CATEGORIES=	net
 MASTER_SITES=	${MASTER_SITE_GITHUB:=Netatalk/}
 
@@ -67,10 +66,10 @@ LDFLAGS.FreeBSD+=	-lpthread
 # into scripts, so replace manually
 SUBST_CLASSES+=		perlpath
 SUBST_STAGE.perlpath=	pre-configure
-SUBST_FILES.perlpath+=	contrib/shell_utils/macusers.in
-SUBST_FILES.perlpath+=	contrib/shell_utils/afpstats.in
-SUBST_FILES.perlpath+=	contrib/shell_utils/addump.in
-SUBST_FILES.perlpath+=	contrib/shell_utils/asip-status.in
+SUBST_FILES.perlpath+=	contrib/bin_utils/macusers.pl
+SUBST_FILES.perlpath+=	contrib/bin_utils/afpstats.pl
+SUBST_FILES.perlpath+=	contrib/bin_utils/addump.pl
+SUBST_FILES.perlpath+=	contrib/bin_utils/asip-status.pl
 SUBST_SED.perlpath=	-e 's|@PERL@|${PERL5}|g'
 
 # Keep Meson from installing rc.d files
@@ -95,7 +94,7 @@ PLIST.ea=		yes
 .endif
 
 # appletalk
-.for atbin in aecho getzones nbplkup nbprgstr nbpunrgstr pap papstatus
+.for atbin in aecho getzones nbplkup nbprgstr nbpunrgstr pap papstatus rtmpqry
 PRINT_PLIST_AWK+=	{ gsub(/^bin\/${atbin}$$/, "$${PLIST.appletalk}&"); }
 .endfor
 .for atsbin in a2boot atalkd macipgw papd timelord
@@ -104,7 +103,7 @@ PRINT_PLIST_AWK+=	{ gsub(/^sbin\/${atsbin}$$/, "$${PLIST.appletalk}&"); }
 .for athdr in aarp at at_var ddp ddp_var endian phase2
 PRINT_PLIST_AWK+=	{ gsub(/^include\/netatalk\/${athdr}\.h$$/, "$${PLIST.appletalk}&"); }
 .endfor
-.for atman1 in aecho getzones nbp nbplkup nbprgstr nbpunrgstr pap
+.for atman1 in aecho getzones nbp nbplkup nbprgstr nbpunrgstr pap rtmpqry
 PRINT_PLIST_AWK+=	{ gsub(/^man\/man1\/${atman1}\.1$$/, "$${PLIST.appletalk}&"); }
 .endfor
 .for atman5 in atalkd.conf papd.conf macipgw.conf
@@ -168,6 +167,7 @@ post-install:
 .include "../../devel/iniparser/buildlink3.mk"
 BUILDLINK_API_DEPENDS.libevent+=        libevent>=2
 .include "../../devel/libevent/buildlink3.mk"
+.include "../../devel/libbstring/buildlink3.mk"
 .include "../../security/cracklib/buildlink3.mk"
 .include "../../security/libgcrypt/buildlink3.mk"
 .include "../../security/openssl/buildlink3.mk"
