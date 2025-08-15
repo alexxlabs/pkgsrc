@@ -1,16 +1,19 @@
-# $NetBSD: Makefile,v 1.49 2025/04/24 14:15:35 wiz Exp $
+# $NetBSD: Makefile,v 1.51 2025/08/14 16:03:57 gdt Exp $
 
+# \todo Update to 1.0.1, from github, and needing c++17.
 DISTNAME=	podofo-0.9.8
-PKGREVISION=	5
+PKGREVISION=	6
 CATEGORIES=	print
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=podofo/}
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
-HOMEPAGE=	http://podofo.sourceforge.net/
+HOMEPAGE=	https://github.com/podofo/podofo/
+#OLD_HOMEPAGE=	http://podofo.sourceforge.net/
 COMMENT=	Library to work with the PDF file format
 LICENSE=	gnu-lgpl-v2 AND gnu-gpl-v2
 
-USE_LANGUAGES=	c c++
+USE_LANGUAGES=		c c++
+#USE_CXX_FEATURES=	c++17
 
 USE_TOOLS+=	pkg-config
 
