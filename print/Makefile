@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.946 2025/05/14 12:59:42 markd Exp $
+# $NetBSD: Makefile,v 1.949 2025/08/16 01:12:32 ryoon Exp $
 #
 
 COMMENT=	Desktop publishing
@@ -29,6 +29,7 @@ SUBDIR+=	cjkutils
 SUBDIR+=	cnprint
 SUBDIR+=	cups
 SUBDIR+=	cups-base
+SUBDIR+=	cups-browsed
 SUBDIR+=	cups-drivers-Magicolor5440DL
 SUBDIR+=	cups-filters
 SUBDIR+=	cups-pdf
@@ -82,9 +83,11 @@ SUBDIR+=	lacheck
 SUBDIR+=	latex-mk
 SUBDIR+=	latexmk
 SUBDIR+=	libcups
+SUBDIR+=	libcupsfilters
 SUBDIR+=	libgxps
 SUBDIR+=	libharu
 SUBDIR+=	libpaper
+SUBDIR+=	libppd
 SUBDIR+=	libspectre
 SUBDIR+=	lilypond
 SUBDIR+=	luajittex

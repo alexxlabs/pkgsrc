@@ -1,4 +1,4 @@
-# $NetBSD: pkg-vulnerabilities,v 1.500 2025/08/14 21:04:12 wiz Exp $
+# $NetBSD: pkg-vulnerabilities,v 1.503 2025/08/15 21:49:39 osa Exp $
 #
 #FORMAT 1.0.0
 #
@@ -27251,7 +27251,8 @@ openexr<3.3.3		heap-overflow			https://nvd.nist.gov/vuln/detail/CVE-2025-48072
 openexr<3.3.3		null-pointer-dereference	https://nvd.nist.gov/vuln/detail/CVE-2025-48073
 openexr<3.3.3		denial-of-service		https://nvd.nist.gov/vuln/detail/CVE-2025-48074
 php{56,74,81,82,83,84}-piwigo<15.0.0	sql-injection	https://nvd.nist.gov/vuln/detail/CVE-2024-43018
-py{27,39,310,311,312,313}-JWT-[0-9]*	weak-encryption	https://nvd.nist.gov/vuln/detail/CVE-2025-45768
+# https://github.com/jpadilla/pyjwt/issues/1080
+#py{27,39,310,311,312,313}-JWT-[0-9]*	weak-encryption	https://nvd.nist.gov/vuln/detail/CVE-2025-45768
 qemu>=10.0.0	unspecified	https://nvd.nist.gov/vuln/detail/CVE-2025-54566
 qemu>=10.0.0	unspecified	https://nvd.nist.gov/vuln/detail/CVE-2025-54567
 sqlite3<3.42.0	integer-overflow	https://nvd.nist.gov/vuln/detail/CVE-2025-7458
@@ -27341,5 +27342,6 @@ tiff<4.7.0	stack-overflow			https://nvd.nist.gov/vuln/detail/CVE-2025-8851
 u-boot-[0-9]*	arbitrary-code-execution	https://nvd.nist.gov/vuln/detail/CVE-2025-45512
 uv<0.8.6	input-validation		https://nvd.nist.gov/vuln/detail/CVE-2025-54368
 vault<1.20.2	authentication-bypass		https://nvd.nist.gov/vuln/detail/CVE-2025-6013
-aide-[0-9]*	improper-output-neutralization	https://nvd.nist.gov/vuln/detail/CVE-2025-54389
-aide>=0.13	null-pointer-dereference	https://nvd.nist.gov/vuln/detail/CVE-2025-54409
+aide<0.19.2		improper-output-neutralization	https://nvd.nist.gov/vuln/detail/CVE-2025-54389
+aide>=0.13<0.19.2	null-pointer-dereference	https://nvd.nist.gov/vuln/detail/CVE-2025-54409
+nginx-devel>=0.7.22<1.29.1	sensitive-information-exposure	https://nvd.nist.gov/vuln/detail/CVE-2025-53859

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4510 2025/08/12 18:13:54 hauke Exp $
+# $NetBSD: Makefile,v 1.4512 2025/08/15 06:51:29 kim Exp $
 #
 
 COMMENT=	Development utilities
@@ -2873,6 +2873,7 @@ SUBDIR+=	py-pip-requirements-parser
 SUBDIR+=	py-pip-run
 SUBDIR+=	py-pip20
 SUBDIR+=	py-pip2pi
+SUBDIR+=	py-pipx
 SUBDIR+=	py-pkgconfig
 SUBDIR+=	py-pkginfo
 SUBDIR+=	py-plaster
@@ -3244,6 +3245,7 @@ SUBDIR+=	py-urwid
 SUBDIR+=	py-urwid_readline
 SUBDIR+=	py-urwidgets
 SUBDIR+=	py-usb
+SUBDIR+=	py-userpath
 SUBDIR+=	py-utils
 SUBDIR+=	py-uuid
 SUBDIR+=	py-uvloop
