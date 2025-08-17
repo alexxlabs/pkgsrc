@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2023/01/24 18:36:19 wiz Exp $
+# $NetBSD: Makefile,v 1.10 2025/08/16 08:15:15 adam Exp $
 
 DISTNAME=	libebur128-1.2.6
 CATEGORIES=	audio
