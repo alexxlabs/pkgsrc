@@ -1,5 +1,4 @@
-# $NetBSD: Makefile,v 1.92 2025/04/24 14:14:48 wiz Exp $
-#
+# $NetBSD: Makefile,v 1.94 2025/08/19 13:40:03 wiz Exp $
 
 GITHUB_PROJECT=	ibus-chewing
 GITHUB_RELEASE=	${PKGVERSION_NOREV}
@@ -27,6 +26,8 @@ MAKE_JOBS_SAFE=		no
 BUILD_TARGET=	all translations
 
 TEST_TARGET=	test
+
+CMAKE_CONFIGURE_ARGS+=	-DCMAKE_POLICY_VERSION_MINIMUM=3.5
 
 .include "../../devel/glib2/schemas.mk"
 

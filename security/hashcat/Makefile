@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.5 2025/08/08 07:23:59 adam Exp $
+# $NetBSD: Makefile,v 1.7 2025/08/18 15:02:40 adam Exp $
 
-DISTNAME=	hashcat-7.0.0
+DISTNAME=	hashcat-7.1.1
 CATEGORIES=	security
 MASTER_SITES=	https://hashcat.net/files/
 
@@ -11,7 +11,7 @@ LICENSE=	mit
 
 USE_CXX_FEATURES=	c++14
 USE_LANGUAGES=		c c++
-USE_TOOLS+=		gmake gsed
+USE_TOOLS+=		gmake gsed perl:run
 
 BUILD_TARGET=	hashcat
 MAKE_ENV+=	SHARED=1
@@ -19,7 +19,6 @@ MAKE_ENV+=	USE_SYSTEM_XXHASH=1
 MAKE_ENV+=	USE_SYSTEM_ZLIB=1
 .if ${MACHINE_ARCH} == "aarch64"
 MAKE_ENV+=	IS_ARM=1
-CFLAGS+=	-march=armv8-a+fp+simd
 .else
 MAKE_ENV+=	IS_ARM=0
 .endif
@@ -33,7 +32,6 @@ REPLACE_PYTHON=	tools/*.py
 
 post-install:
 	${RM} ${DESTDIR}${PREFIX}/include/hashcat/sort_r.h.orig
-	${RM} ${DESTDIR}${PREFIX}/include/hashcat/terminal.h.orig
 
 .include "../../archivers/minizip/buildlink3.mk"
 .include "../../devel/xxhash/buildlink3.mk"
