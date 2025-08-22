@@ -1,4 +1,4 @@
-$NetBSD: TODO,v 1.26126 2025/08/19 14:13:41 pho Exp $
+$NetBSD: TODO,v 1.26142 2025/08/20 20:06:44 wiz Exp $
 
 Suggested new packages
 ======================
@@ -387,7 +387,7 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html
 	o HElib-2.1.0
 	o JBidwatcher-2.5.6 [wants launch4j]
 	o LPRng-core-3.8.35
-	o MesaLib-25.2
+	o MesaLib-25.2.1
 	o OdfConverter-4.0
 	o PACK-0.0.4
 	o PageEdit-2.5.0
@@ -418,7 +418,6 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html
 	o aide-0.19.2
 	o album-4.17
 	o alevt-1.6.2
-	o alex-3.5.4.0
 	o alsa-plugins-1.2.7.1
 	o amanda-3.5.2
 	o amarok-3.3
@@ -463,7 +462,7 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html
 	o autoconvert-0.3.16
 	o autojump-22.5.3
 	o autosetup-0.7.0
-	o avidemux-2.8
+	o avidemux-2.8.1
 	o avl-2.0.3 [2.x is not source and binary compatible with 1.x]
 	o avr-gdb-10.1
 	o baci-20040415
@@ -537,7 +536,6 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html
 	o coordgenlibs-2.0.3
 	o cross-binutils-2.36.1
 	o cross-h8300-hms-binutils-2.17
-	o crush-0.6.2
 	o csound6-6.18.1
 	o csvkit-1.4.0
 	o ctemplate-2.4
@@ -665,7 +663,6 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html
 	o gitea-1.24.3
 	o gjs-1.70.1
 	o gkrellm-2.4.0
-	o gkrellm-multiping-2.0.13
 	o gkrellm-server-2.3.11
 	o gkrellm-share-2.3.11
 	o gleam-1.12.0
@@ -742,8 +739,6 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html
 	o hamster-applet-2.32.1
 	o handbrake-1.9.0
 	o hanzim-3.5
-	o happy-2.1.7
-	o harfbuzz-11.4.1
 	o harminv-1.4.1
 	o hashcash-1.23
 	o haskell-mode-13.20
@@ -767,7 +762,6 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html
 	o icinga-base-2.12.3
 	o idzebra-2.2.2
 	o ike-2.0.1 [pkg/37032]
-	o imath-3.2.1
 	o imlib2-1.12.4
 	o imp-6.2.12
 	o inadyn-2.8.1
@@ -849,7 +843,6 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html
 	o libgiigic-1.1.2
 	o libgnomekbd-3.4.0.2
 	o libgtop-2.40 [blocking update of mate-system-monitor]
-	o libhighway-1.3.0
 	o libisoburn-1.5.4
 	o libisofs-1.5.4
 	o libixp-0.5 [breaks wmii-3.6, wait for compatible version; see also wmii+ixp entry]
@@ -866,6 +859,7 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html
 	o libquantum-1.1.0 [pkg/43728, development release]
 	o librdkafka-1.6.1
 	o librelp-1.10.0
+	o libreoffice-25.8
 	o libretro-core-info-1.9.1
 	o libthai-0.2.2
 	o libtrace-4.0.16
@@ -964,7 +958,7 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html
 	o nvidia-texture-tools-2.1.1
 	o nxtvepg-2.8.1
 	o objc-3.3.24
-	o obs-studio-31.1
+	o obs-studio-31.1.2
 	o ocaml-5.2.1 [wip]
 	o ocaml-cppo-1.6.9
 	o ocaml-dune-3.19.1
@@ -1002,7 +996,6 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html
 	o ordCalc-0.3.2
 	o oroborus-2.0.18
 	o ortp-0.27.0
-	o owncloudclient-2.10.1
 	o p0f-3.09b
 	o p5-Authen-Simple-0.6
 	o p5-Class-DBI-Plugin-1.04
@@ -1116,17 +1109,12 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html
 	o py-fecon235-6.18.1203
 	o py-filebytes-0.10.2
 	o py-gammu-3.1
-	o py-google-api-python-client-2.179.0
 	o py-hgview-1.9.0
 	o py-input-pad-1.4.2
-	o py-markdown-it-py-4.0.0
 	o py-omniORBpy-3.7
-	o py-pdf-6.0.0
 	o py-pdf-parser-0.7.4
 	o py-postgresql-5.1.2
-	o py-ruff-0.12.9
 	o py-sbws-1.1.0
-	o py-setuptools_scm-9.2.0
 	o py-simpletal-5.1
 	o py-sybase-0.37
 	o py-syslog-ng-3.31.2
@@ -1143,9 +1131,7 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html
 	o qutebrowser-3.0.1
 	o racket-8.17
 	o radare2-6.0
-	o radiance-5.4
 	o rails-6.1.0
-	o raqm-0.10.3
 	o rasmol-2.7.5.2
 	o rat-4.2.25
 	o razor-qt-0.5.2
@@ -1221,7 +1207,7 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html
 	o spiped-1.6.1b
 	o spl-1.0pre6
 	o sqlrelay-2.1.1
-	o squeak-5.0
+	o squeak-6.0
 	o squeak-vm-4.10.2.2765
 	o squidclamav-7.2
 	o ssh-askpass-1.2.4.1
@@ -1241,7 +1227,6 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html
 	o syft-0.68.1
 	o sympa-6.2.72
 	o syncstorage-0.18.3
-	o syncstorage-rs-0.20.0
 	o syncthing-2.0
 	o sysinfo-4.2.2
 	o system-tools-backends-2.10.1
@@ -1291,7 +1276,6 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html
 	o torrentzip-2.1.0
 	o trafficserver-9.0.1
 	o transmission-4.0.4
-	o tree-sitter-php-0.24.1
 	o trimmomatic-0.39
 	o tripwire-2.3.1 [see also pkg/22362]
 	o trojita-0.7
