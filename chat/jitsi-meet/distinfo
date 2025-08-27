@@ -1,5 +1,0 @@
-$NetBSD: distinfo,v 1.2 2023/02/10 12:50:13 khorben Exp $
-
-BLAKE2s (jitsi-meet/jitsi-meet_8252.tar.gz) = 6fc5cb855c5cad99d1f5f0f6131084d6bac0cf254dcb8a1b80e56b14e2175399
-SHA512 (jitsi-meet/jitsi-meet_8252.tar.gz) = e25b7ca8bea6f189d6cadfc177bd114216e5e2043eec9835189e16b9e3d3480e4f9cd67fc75e3c6f5662e1cf72a7164661900c63be67ea892013d6b739eae512
-Size (jitsi-meet/jitsi-meet_8252.tar.gz) = 116898355 bytes

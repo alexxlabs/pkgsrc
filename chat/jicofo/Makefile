@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1 2023/01/03 10:27:40 khorben Exp $
+# $NetBSD: Makefile,v 1.4 2025/08/26 22:16:41 gdt Exp $
 
 .include "../../chat/jitsi-meet/Makefile.common"
 
@@ -8,11 +8,13 @@ PKGNAME=	${GITHUB_PROJECT}-${JITSI_MEET_VERSION}
 HOMEPAGE=	https://github.com/jitsi/jicofo/
 COMMENT=	Server-side focus component used in Jitsi Meet conferences
 
-DISTINFO_FILE=	${.CURDIR}/../../chat/jicofo/distinfo
+# The jicofo repo distributes files with the same name as
+# the jitsi-meet repo, but with different contents.
+DIST_SUBDIR=	jicofo
 DISTFILES=	${DEFAULT_DISTFILES}
 DISTFILES+=	jicofo-java-deps-${JITSI_MEET_VERSION}.tar.gz
 SITES.jicofo-java-deps-${JITSI_MEET_VERSION}.tar.gz= \
-		ftp://ftp.NetBSD.org/pub/NetBSD/misc/khorben/
+		ftp://ftp.NetBSD.org/pub/NetBSD/misc/ktnb/
 
 USE_TOOLS+=	bash:run pax:build unzip
 
