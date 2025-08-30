@@ -1,4 +1,4 @@
-# $NetBSD: pkg-vulnerabilities,v 1.524 2025/08/27 10:50:01 leot Exp $
+# $NetBSD: pkg-vulnerabilities,v 1.530 2025/08/28 12:06:18 kikadf Exp $
 #
 #FORMAT 1.0.0
 #
@@ -14911,7 +14911,7 @@ openssl>=1.1.0<1.1.0h	verification-bypass	https://nvd.nist.gov/vuln/detail/CVE-2
 npm<6.0.1		modification-of-assumed-immutable-data	https://nvd.nist.gov/vuln/detail/CVE-2018-3728
 leptonica<1.75.1	command-injection	https://nvd.nist.gov/vuln/detail/CVE-2018-3836
 ffmpeg3<3.4.3		infinite-loop		https://nvd.nist.gov/vuln/detail/CVE-2018-7751
-ktexteditor>=5.34.0	symlink-attack		https://nvd.nist.gov/vuln/detail/CVE-2018-10361
+ktexteditor>=5.34.0<5.48.0	symlink-attack		https://nvd.nist.gov/vuln/detail/CVE-2018-10361
 binutils<2.31		denial-of-service	https://nvd.nist.gov/vuln/detail/CVE-2018-10372
 binutils<2.31		denial-of-service	https://nvd.nist.gov/vuln/detail/CVE-2018-10373
 glusterfs<3.12.9	authentication-bypass	https://nvd.nist.gov/vuln/detail/CVE-2018-1112
@@ -18259,7 +18259,7 @@ isc-dhcpd<4.4.1		denial-of-service	https://nvd.nist.gov/vuln/detail/CVE-2019-647
 libarchive<3.4.0	use-after-free		https://nvd.nist.gov/vuln/detail/CVE-2019-18408
 libidn2<2.2.0		spoofing		https://nvd.nist.gov/vuln/detail/CVE-2019-12290
 libidn2<2.1.1		buffer-overflow		https://nvd.nist.gov/vuln/detail/CVE-2019-18224
-libssh2-[0-9]*		integer-overflow	https://nvd.nist.gov/vuln/detail/CVE-2019-17498
+libssh2<1.10.0		integer-overflow	https://nvd.nist.gov/vuln/detail/CVE-2019-17498
 libvncserver-[0-9]*	memory-leak		https://nvd.nist.gov/vuln/detail/CVE-2019-15681
 magento<1.9.4.1		multiple-vulnerabilities	https://magento.com/security/patches/magento-2.3.1-2.2.8-and-2.1.17-security-update
 magento>=2.1<2.1.17	multiple-vulnerabilities	https://magento.com/security/patches/magento-2.3.1-2.2.8-and-2.1.17-security-update
@@ -19741,7 +19741,7 @@ grub2<2.0.6		use-after-free		https://nvd.nist.gov/vuln/detail/CVE-2020-15706
 grub2<2.0.6		integer-overflow	https://nvd.nist.gov/vuln/detail/CVE-2020-15707
 grub2<2.0.6		buffer-overflow		https://nvd.nist.gov/vuln/detail/CVE-2020-10713
 balsa<2.6.0		null-pointer-dereference	https://nvd.nist.gov/vuln/detail/CVE-2020-16118
-libssh-[0-9]*		null-pointer-dereference	https://nvd.nist.gov/vuln/detail/CVE-2020-16135
+libssh<0.9.5		null-pointer-dereference	https://nvd.nist.gov/vuln/detail/CVE-2020-16135
 evolution-data-server<3.35.91		null-pointer-dereference	https://nvd.nist.gov/vuln/detail/CVE-2020-16117
 ruby{25,26,27}-faye-websocket<0.11.0	improper-certificate-validation https://nvd.nist.gov/vuln/detail/CVE-2020-15133
 php{56,71,72,73,74}-tiki6-[0-9]*	cross-site-scripting	https://nvd.nist.gov/vuln/detail/CVE-2020-8966
@@ -19903,7 +19903,7 @@ php>=7.3<7.3.22		information-disclosure		https://nvd.nist.gov/vuln/detail/CVE-20
 php>=7.4<7.4.10		information-disclosure		https://nvd.nist.gov/vuln/detail/CVE-2020-7068
 bitcoin>=0.16.0<0.16.2	denial-of-service		https://nvd.nist.gov/vuln/detail/CVE-2018-17145
 bitcoin>=0.20.0<0.20.1	denial-of-service		https://nvd.nist.gov/vuln/detail/CVE-2020-14198
-yarn-[0-9]*		denial-of-service		https://nvd.nist.gov/vuln/detail/CVE-2020-15168
+#yarn-[0-9]*		denial-of-service		https://nvd.nist.gov/vuln/detail/CVE-2020-15168
 zeromq<4.3.3		denial-of-service		https://nvd.nist.gov/vuln/detail/CVE-2020-15166
 p5-DBI<1.632		memory-corruption		https://nvd.nist.gov/vuln/detail/CVE-2013-7490
 p5-DBI<1.628		stack-corruption		https://nvd.nist.gov/vuln/detail/CVE-2013-7491
@@ -22371,8 +22371,8 @@ moodle<3.9.11	remote-code-execution	https://nvd.nist.gov/vuln/detail/CVE-2021-39
 moodle>=3.10<3.10.8	remote-code-execution 	https://nvd.nist.gov/vuln/detail/CVE-2021-3943
 moodle<3.9.11	cross-site-scripting	https://nvd.nist.gov/vuln/detail/CVE-2021-43558
 moodle>=3.10<3.10.8	cross-site-scripting	https://nvd.nist.gov/vuln/detail/CVE-2021-43558
-lua51-[0-9]*	denial-of-service	https://nvd.nist.gov/vuln/detail/CVE-2021-43519
-lua52-[0-9]*	denial-of-service	https://nvd.nist.gov/vuln/detail/CVE-2021-43519
+#lua51-[0-9]*	denial-of-service	https://nvd.nist.gov/vuln/detail/CVE-2021-43519
+#lua52-[0-9]*	denial-of-service	https://nvd.nist.gov/vuln/detail/CVE-2021-43519
 lua53<5.3.5	denial-of-service	https://nvd.nist.gov/vuln/detail/CVE-2021-43519
 lua54<5.4.4	denial-of-service	https://nvd.nist.gov/vuln/detail/CVE-2021-43519
 matrix-synapse<1.47.1	arbitrary-file-write	https://nvd.nist.gov/vuln/detail/CVE-2021-41281
@@ -25639,7 +25639,7 @@ gnuplot-[0-9]*	buffer-overflow	https://nvd.nist.gov/vuln/detail/CVE-2020-25969
 screen<4.9.1	denial-of-service	https://nvd.nist.gov/vuln/detail/CVE-2023-24626
 terraform>=1.0.8<1.5.7	overwrite-arbitrary-files	https://nvd.nist.gov/vuln/detail/CVE-2023-4782
 sniproxy<0.6.1	arbitrary-code-execution	https://nvd.nist.gov/vuln/detail/CVE-2023-25076
-spice-server-[0-9]*	authentication-bypass	https://nvd.nist.gov/vuln/detail/CVE-2020-23793
+spice-server<0.13.90	authentication-bypass	https://nvd.nist.gov/vuln/detail/CVE-2020-23793
 routinator<0.12.2	denial-of-service	https://nvd.nist.gov/vuln/detail/CVE-2023-39915
 routinator>=0.9.0<0.12.2	path-traversal	https://nvd.nist.gov/vuln/detail/CVE-2023-39916
 sofia-sip<1.13.15	heap-based-buffer-overflow	https://nvd.nist.gov/vuln/detail/CVE-2023-32307
