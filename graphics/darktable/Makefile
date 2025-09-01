@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.177 2025/08/10 10:38:54 wiz Exp $
+# $NetBSD: Makefile,v 1.179 2025/08/31 12:40:04 wiz Exp $
 
 DISTNAME=	darktable-5.0.0
-PKGREVISION=	7
+PKGREVISION=	8
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_GITHUB:=darktable-org/}
 GITHUB_PROJECT=	darktable
@@ -12,6 +12,8 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	https://www.darktable.org/
 COMMENT=	Photography workflow application
 LICENSE=	gnu-gpl-v3
+
+TOOL_DEPENDS+=	libxslt-[0-9]*:../../textproc/libxslt
 
 USE_LANGUAGES=		c c++
 USE_PKGLOCALEDIR=	yes

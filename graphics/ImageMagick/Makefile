@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.353 2025/08/14 07:41:09 triaxx Exp $
+# $NetBSD: Makefile,v 1.355 2025/09/01 09:37:47 triaxx Exp $
 
 .include "Makefile.common"
 

@@ -1,6 +1,5 @@
-# $NetBSD: Makefile,v 1.20 2024/12/29 15:09:54 adam Exp $
+# $NetBSD: Makefile,v 1.22 2025/08/30 05:06:41 ryoon Exp $
 
-PKGREVISION= 3
 .include "../../math/libixion/Makefile.common"
 
 PKGNAME= 	${PYPKGPREFIX}-${DISTNAME}
@@ -10,6 +9,8 @@ BUILD_DIRS=	src/python
 PY_PATCHPLIST=	yes
 
 PYTHON_VERSIONS_INCOMPATIBLE= 27
+
+CONFIGURE_ARGS+=	--with-boost=${BUILDLINK_DIR.boost-libs}
 
 pre-configure:
 	set -e; cd ${WRKSRC}; \

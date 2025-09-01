@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4513 2025/08/26 08:48:16 adam Exp $
+# $NetBSD: Makefile,v 1.4515 2025/08/31 19:18:27 wiz Exp $
 #
 
 COMMENT=	Development utilities
@@ -355,6 +355,7 @@ SUBDIR+=	dlcompat
 SUBDIR+=	dmake
 SUBDIR+=	dmalloc
 SUBDIR+=	doc++
+SUBDIR+=	docopt.cpp
 SUBDIR+=	dolphin-plugins
 SUBDIR+=	dotconf
 SUBDIR+=	doxygen
@@ -1220,6 +1221,7 @@ SUBDIR+=	mph
 SUBDIR+=	msgpack
 SUBDIR+=	muon
 SUBDIR+=	mustach
+SUBDIR+=	mustache
 SUBDIR+=	myrepos
 SUBDIR+=	nana
 SUBDIR+=	nancy

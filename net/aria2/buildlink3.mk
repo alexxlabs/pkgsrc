@@ -1,0 +1,13 @@
+# $NetBSD: buildlink3.mk,v 1.2 2025/08/31 20:25:50 wiz Exp $
+
+BUILDLINK_TREE+=	aria2
+
+.if !defined(ARIA2_BUILDLINK3_MK)
+ARIA2_BUILDLINK3_MK:=
+
+BUILDLINK_API_DEPENDS.aria2+=	aria2>=1.36.0nb13
+BUILDLINK_PKGSRCDIR.aria2?=	../../net/aria2
+
+.endif	# ARIA2_BUILDLINK3_MK
+
+BUILDLINK_TREE+=	-aria2

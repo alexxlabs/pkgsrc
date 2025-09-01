@@ -1,4 +1,4 @@
-$NetBSD: TODO,v 1.26169 2025/08/29 11:20:35 ryoon Exp $
+$NetBSD: TODO,v 1.26190 2025/08/31 10:49:23 wiz Exp $
 
 Suggested new packages
 ======================
@@ -660,9 +660,6 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html
 	o git-cinnabar-0.7.2
 	o gitea-1.24.3
 	o gjs-1.70.1
-	o gkrellm-2.4.0
-	o gkrellm-server-2.3.11
-	o gkrellm-share-2.3.11
 	o gleam-1.12.0
 	o glfw-3.4
 	o gli2-2.70.0
@@ -720,6 +717,7 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html
 	o gromacs-2021.1
 	o gss-1.0.3
 	o gst-plugins1-omx-1.10.0
+	o gtk4-4.20
 	o gtklevel9-5.1
 	o gtklife-5.2
 	o gtkmagnetic-23
@@ -735,7 +733,6 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html
 	o h8300-elf-binutils-2.36.1
 	o h8300-elf-gcc-7.1.0
 	o hamster-applet-2.32.1
-	o handbrake-1.9.0
 	o hanzim-3.5
 	o harminv-1.4.1
 	o hashcash-1.23
@@ -857,7 +854,6 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html
 	o libquantum-1.1.0 [pkg/43728, development release]
 	o librdkafka-1.6.1
 	o librelp-1.10.0
-	o libreoffice-25.8
 	o libretro-core-info-1.9.1
 	o libthai-0.2.2
 	o libtrace-4.0.16
@@ -928,6 +924,7 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html
 	o mono-nat-1.1.0
 	o monocypher-3.1.2
 	o moodle-4.5.2 (LTS)
+	o moor-2.1.0
 	o mopher-0.6.0
 	o moserial-2.30.0
 	o mserv-devel-0.41
@@ -960,7 +957,7 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html
 	o obs-studio-31.1.2
 	o ocaml-5.3.0 [wip]
 	o ocaml-cppo-1.6.9
-	o ocaml-dune-3.20.0
+	o ocaml-dune-3.20.1
 	o ocaml-encore-0.8
 	o ocaml-eqaf-0.7
 	o ocaml-expat-1.1.0
@@ -995,6 +992,7 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html
 	o ordCalc-0.3.2
 	o oroborus-2.0.18
 	o ortp-0.27.0
+	o ov-0.43.0
 	o p0f-3.09b
 	o p5-Authen-Simple-0.6
 	o p5-Class-DBI-Plugin-1.04
@@ -1219,14 +1217,12 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html
 	o stratagus-2.2.5.5
 	o streamtuner-2.2.0
 	o sup-0.4
-	o svt-av1-3.0 [wip]
 	o swapd-1.0.5
 	o swi-prolog-9.2.9
 	o swi-prolog-lite-9.2.9
 	o swi-prolog-packages-9.2.9
 	o syft-0.68.1
 	o sympa-6.2.72
-	o syncstorage-0.18.3
 	o syncthing-2.0
 	o sysinfo-4.2.2
 	o system-tools-backends-2.10.1

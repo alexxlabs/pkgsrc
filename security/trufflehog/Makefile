@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.34 2025/06/06 14:01:37 bsiegert Exp $
+# $NetBSD: Makefile,v 1.36 2025/08/31 19:40:17 leot Exp $
 
-DISTNAME=	trufflehog-3.63.7
-PKGREVISION=	11
+DISTNAME=	trufflehog-3.90.5
 CATEGORIES=	security
 MASTER_SITES=	${MASTER_SITE_GITHUB:=trufflesecurity/}
 GITHUB_TAG=	v${PKGVERSION_NOREV}
@@ -13,6 +12,17 @@ LICENSE=	gnu-agpl-v3
 
 GO_BUILD_PATTERN+=	-ldflags ' \
 			-X github.com/trufflesecurity/trufflehog/v3/pkg/version.BuildVersion=${GITHUB_TAG}'
+
+# github.com/wasilibs/go-re2 needs NOT_PAX_MPROTECT_SAFE, stick to Go regexp to
+# avoid that.
+SUBST_CLASSES+=		regexp
+SUBST_STAGE.regexp=	pre-configure
+SUBST_FILES.regexp+=	pkg/detectors/*.go
+SUBST_FILES.regexp+=	pkg/detectors/*/*.go
+SUBST_FILES.regexp+=	pkg/detectors/*/*/*.go
+SUBST_FILES.regexp+=	pkg/detectors/*/*/*/*.go
+SUBST_MESSAGE.regexp=	Stick to Go regexp to avoid requiring NOT_PAX_MPROTECT_SAFE
+SUBST_SED.regexp+=	-e 's,regexp "github.com/wasilibs/go-re2","regexp",g'
 
 .include "go-modules.mk"
 

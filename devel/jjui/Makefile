@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.4 2025/08/24 16:01:22 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2025/08/31 10:06:56 wiz Exp $
 
-DISTNAME=	jjui-0.9.2
+DISTNAME=	jjui-0.9.3
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_GITHUB:=idursun/}
 GITHUB_TAG=	v${PKGVERSION_NOREV}
