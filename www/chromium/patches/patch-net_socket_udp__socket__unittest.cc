@@ -1,10 +1,10 @@
-$NetBSD: patch-net_socket_udp__socket__unittest.cc,v 1.5 2025/08/13 07:44:28 kikadf Exp $
+$NetBSD: patch-net_socket_udp__socket__unittest.cc,v 1.7 2025/09/12 16:02:32 kikadf Exp $
 
 * Part of patchset to build chromium on NetBSD
 * Based on OpenBSD's chromium patches, and
   pkgsrc's qt5-qtwebengine patches
 
---- net/socket/udp_socket_unittest.cc.orig	2025-07-29 22:51:44.000000000 +0000
+--- net/socket/udp_socket_unittest.cc.orig	2025-09-08 23:21:33.000000000 +0000
 +++ net/socket/udp_socket_unittest.cc
 @@ -397,7 +397,7 @@ TEST_F(UDPSocketTest, PartialRecv) {
    EXPECT_EQ(second_packet, received);

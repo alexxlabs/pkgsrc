@@ -1,17 +1,17 @@
-$NetBSD: patch-chrome_browser_task__manager_task__manager__observer.h,v 1.5 2025/08/13 07:44:19 kikadf Exp $
+$NetBSD: patch-chrome_browser_task__manager_task__manager__observer.h,v 1.7 2025/09/12 16:02:23 kikadf Exp $
 
 * Part of patchset to build chromium on NetBSD
 * Based on OpenBSD's chromium patches, and
   pkgsrc's qt5-qtwebengine patches
 
---- chrome/browser/task_manager/task_manager_observer.h.orig	2025-07-29 22:51:44.000000000 +0000
+--- chrome/browser/task_manager/task_manager_observer.h.orig	2025-09-08 23:21:33.000000000 +0000
 +++ chrome/browser/task_manager/task_manager_observer.h
-@@ -46,7 +46,7 @@ enum RefreshType {
+@@ -45,7 +45,7 @@ enum RefreshType {
    // or backgrounded.
-   REFRESH_TYPE_PRIORITY = 1 << 13,
+   REFRESH_TYPE_PRIORITY = 1 << 12,
  
 -#if BUILDFLAG(IS_LINUX) || BUILDFLAG(IS_CHROMEOS) || BUILDFLAG(IS_MAC)
 +#if BUILDFLAG(IS_LINUX) || BUILDFLAG(IS_CHROMEOS) || BUILDFLAG(IS_MAC) || BUILDFLAG(IS_BSD)
    // For observers interested in getting the number of open file descriptors of
    // processes.
-   REFRESH_TYPE_FD_COUNT = 1 << 14,
+   REFRESH_TYPE_FD_COUNT = 1 << 13,

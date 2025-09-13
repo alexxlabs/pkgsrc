@@ -1,10 +1,10 @@
-$NetBSD: patch-base_base__paths__posix.cc,v 1.5 2025/08/13 07:44:14 kikadf Exp $
+$NetBSD: patch-base_base__paths__posix.cc,v 1.7 2025/09/12 16:02:19 kikadf Exp $
 
 * Part of patchset to build chromium on NetBSD
 * Based on OpenBSD's chromium patches, and
   pkgsrc's qt5-qtwebengine patches
 
---- base/base_paths_posix.cc.orig	2025-07-29 22:51:44.000000000 +0000
+--- base/base_paths_posix.cc.orig	2025-09-08 23:21:33.000000000 +0000
 +++ base/base_paths_posix.cc
 @@ -15,6 +15,7 @@
  #include <ostream>

@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.3 2022/10/12 20:56:41 markd Exp $
+# $NetBSD: buildlink3.mk,v 1.5 2025/09/07 08:24:13 wiz Exp $
 
 BUILDLINK_TREE+=	bacula
 

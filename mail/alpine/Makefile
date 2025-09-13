@@ -1,11 +1,12 @@
-# $NetBSD: Makefile,v 1.60 2025/04/19 07:58:00 wiz Exp $
+# $NetBSD: Makefile,v 1.63 2025/09/10 14:07:23 vins Exp $
 
 DISTNAME=	alpine-2.26
-PKGREVISION=	4
+PKGREVISION=	6
 CATEGORIES=	mail
 # repo at https://repo.or.cz/alpine.git
 MASTER_SITES=	https://alpineapp.email/alpine/release/src/
-DIST_SUBDIR=	${PKGNAME_NOREV}
+# needed for unversioned changes in upstream patches
+DIST_SUBDIR=	${PKGNAME_NOREV}-202509
 EXTRACT_SUFX=	.tar.xz
 
 PATCH_SITES=		https://alpineapp.email/alpine/patches/alpine-${PKGVERSION_NOREV}/
@@ -38,6 +39,8 @@ USE_LIBTOOL=	yes
 MAKE_JOBS_SAFE=	no
 BUILD_DEFS+=	VARBASE
 
+#CFLAGS+=	-Werror
+
 .include "../../mk/bsd.prefs.mk"
 
 CONFIGURE_ARGS+=	--with-ssl-dir=${SSLBASE}
@@ -46,6 +49,7 @@ CONFIGURE_ARGS+=	--with-ssl-include-dir=${SSLBASE}/include
 CONFIGURE_ARGS+=	--with-ssl-lib-dir=${SSLBASE}/lib
 CONFIGURE_ARGS+=	--with-system-pinerc=${PKG_SYSCONFDIR}/pine.conf
 CONFIGURE_ARGS+=	--with-system-fixed-pinerc=${PKG_SYSCONFDIR}/pine.conf.fixed
+CONFIGURE_ARGS+=	--with-local-support-info=${PREFIX}/${PKGINFODIR}/pine.info
 CONFIGURE_ARGS+=	--with-passfile=.pine-passfile
 CONFIGURE_ARGS+=	--with-libiconv-prefix=${BUILDLINK_PREFIX.iconv}
 CONFIGURE_ARGS+=	--with-libintl-prefix=${BUILDLINK_PREFIX.gettext}
@@ -84,7 +88,10 @@ SUBST_SED.panic+=	-e 's,panic *(,Panic(,g'
 SUBST_CLASSES+=		paths
 SUBST_STAGE.paths=	pre-configure
 SUBST_MESSAGE.paths=	Replacing hard-coded paths.
-SUBST_FILES.paths=	doc/man1/alpine.1 doc/tech-notes/*.txt pith/pine.hlp
+SUBST_FILES.paths=	doc/man1/alpine.1 doc/tech-notes/*.txt
+SUBST_FILES.paths+=	pith/filter.c pith/pine.hlp imap/src/osdep/unix/Makefile
+SUBST_SED.paths+=	-e "s:/usr/local/lib/pine.conf:${PKG_SYSCONFDIR}/pine.conf:g"
+SUBST_SED.paths+=	-e "s:/usr/local/lib/pine.info:${PREFIX}/${PKGINFODIR}/pine.info:g"
 SUBST_SED.paths+=	-e "s:/usr/local/pine.conf:${PKG_SYSCONFDIR}/pine.conf:g"
 SUBST_SED.paths+=	-e "s:/usr/local/lib:${PKG_SYSCONFDIR}:g"
 SUBST_SED.paths+=	-e "s:/usr/local/bin:${PREFIX}/bin:g"
@@ -112,8 +119,10 @@ do-install:
 .endfor
 
 post-install:
-	${RUN}${WRKSRC}/alpine/alpine -conf > ${DESTDIR}${EGDIR}/pine.conf
-	${INSTALL_DATA} ${PKG_DOCS:S|^|${WRKSRC}/|} ${DESTDIR}${DOCDIR}
+	${RUN} ${WRKSRC}/alpine/alpine -conf >		\
+		${DESTDIR}${EGDIR}/pine.conf
+	${INSTALL_DATA} ${PKG_DOCS:S|^|${WRKSRC}/|}	\
+		${DESTDIR}${DOCDIR}
 
 # This must come first, or at least before gettext-tools, because the
 # latter includes termcap.buildlink3.mk instead; that sets things up

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1606 2025/08/20 14:08:33 wiz Exp $
+# $NetBSD: Makefile,v 1.1609 2025/09/09 07:14:20 wiz Exp $
 #
 
 COMMENT=	Networking tools
@@ -238,6 +238,7 @@ SUBDIR+=	gupnp-tools
 SUBDIR+=	gvproxy
 SUBDIR+=	haproxy
 SUBDIR+=	hdl-dump
+SUBDIR+=	helm
 SUBDIR+=	hercules4sdl-telnet
 SUBDIR+=	hesiod
 SUBDIR+=	hf6to4
@@ -719,6 +720,7 @@ SUBDIR+=	py-apache-libcloud
 SUBDIR+=	py-asyncio-nats-client
 SUBDIR+=	py-awscli
 SUBDIR+=	py-awscli-plugin-logs-tail
+SUBDIR+=	py-awscli2
 SUBDIR+=	py-beanstalkc
 SUBDIR+=	py-bonjour
 SUBDIR+=	py-boto3

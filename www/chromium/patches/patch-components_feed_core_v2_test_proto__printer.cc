@@ -1,10 +1,10 @@
-$NetBSD: patch-components_feed_core_v2_test_proto__printer.cc,v 1.5 2025/08/13 07:44:23 kikadf Exp $
+$NetBSD: patch-components_feed_core_v2_test_proto__printer.cc,v 1.7 2025/09/12 16:02:26 kikadf Exp $
 
 * Part of patchset to build chromium on NetBSD
 * Based on OpenBSD's chromium patches, and
   pkgsrc's qt5-qtwebengine patches
 
---- components/feed/core/v2/test/proto_printer.cc.orig	2025-07-29 22:51:44.000000000 +0000
+--- components/feed/core/v2/test/proto_printer.cc.orig	2025-09-08 23:21:33.000000000 +0000
 +++ components/feed/core/v2/test/proto_printer.cc
 @@ -158,8 +158,8 @@ class TextProtoPrinter {
    }

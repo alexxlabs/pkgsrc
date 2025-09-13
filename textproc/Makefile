@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1537 2025/08/31 19:16:31 wiz Exp $
+# $NetBSD: Makefile,v 1.1545 2025/09/07 08:08:50 dkazankov Exp $
 #
 
 COMMENT=	Text processing utilities (does not include desktop publishing)
@@ -49,7 +49,12 @@ SUBDIR+=	R-xml2
 SUBDIR+=	R-xmlparsedata
 SUBDIR+=	R-yaml
 SUBDIR+=	WordNet
+SUBDIR+=	ada-libgnatdoc-25
+SUBDIR+=	ada-libgnatformat-25
+SUBDIR+=	ada-liblal-refactor-25
+SUBDIR+=	ada-markdown-25
 SUBDIR+=	ada-prettier-ada-25
+SUBDIR+=	ada-templates-parser-25
 SUBDIR+=	ada-vss-25
 SUBDIR+=	ada-xmlada-24
 SUBDIR+=	ada-xmlada-25
@@ -252,6 +257,8 @@ SUBDIR+=	gdome2
 SUBDIR+=	git-delta
 SUBDIR+=	glimpse
 SUBDIR+=	glow
+SUBDIR+=	gnatdoc
+SUBDIR+=	gnatformat
 SUBDIR+=	gnome-dictionary
 SUBDIR+=	go-md2man
 SUBDIR+=	go-mmark
@@ -508,6 +515,7 @@ SUBDIR+=	kf6-sonnet
 SUBDIR+=	kf6-syntax-highlighting
 SUBDIR+=	kpimtextedit
 SUBDIR+=	ktextaddons
+SUBDIR+=	lal-refactor
 SUBDIR+=	latex2html
 SUBDIR+=	libclucene
 SUBDIR+=	libcroco

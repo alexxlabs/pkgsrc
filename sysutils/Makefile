@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1162 2025/08/22 09:00:11 bouyer Exp $
+# $NetBSD: Makefile,v 1.1164 2025/09/07 18:44:01 maya Exp $
 #
 
 COMMENT=	System utilities
@@ -505,6 +505,7 @@ SUBDIR+=	netbsd_exporter
 SUBDIR+=	netbt-hcidump
 SUBDIR+=	netmask
 SUBDIR+=	news
+SUBDIR+=	nitro
 SUBDIR+=	nmrpflash
 SUBDIR+=	nnn
 SUBDIR+=	node_exporter
@@ -725,6 +726,7 @@ SUBDIR+=	sformat
 SUBDIR+=	shc
 SUBDIR+=	shelldap
 SUBDIR+=	shmux
+SUBDIR+=	skaffold
 SUBDIR+=	skill
 SUBDIR+=	skopeo
 SUBDIR+=	slay
