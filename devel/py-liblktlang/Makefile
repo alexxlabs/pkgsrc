@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2025/09/06 16:47:31 dkazankov Exp $
+# $NetBSD: Makefile,v 1.4 2025/09/16 05:45:36 dkazankov Exp $
 
 DISTNAME=	${GITHUB_PROJECT}-25.0.0
 PKGNAME=	${PYPKGPREFIX}-liblktlang-25.0
@@ -21,6 +21,9 @@ HAS_CONFIGURE=	yes
 .include "../../mk/bsd.prefs.mk"
 
 GCC_REQD+=	14
+
+# langkit uses deprecated pipes module
+PYTHON_VERSIONS_INCOMPATIBLE+=	313
 
 CREATE_INPLACE_BUILD_TARGETS=	static-pic
 

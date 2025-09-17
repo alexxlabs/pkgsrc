@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.10 2025/09/09 01:53:45 lloyd Exp $
+# $NetBSD: Makefile,v 1.12 2025/09/16 12:57:48 gutteridge Exp $
 
 DISTNAME=	gdb-16.3
 PKGNAME=	cross-arm-none-eabi-${DISTNAME}
-#PKGREVISION=	3
+PKGREVISION=	2
 CATEGORIES=	cross
 MASTER_SITES=	${MASTER_SITE_GNU:=gdb/}
 EXTRACT_SUFX=	.tar.xz
@@ -14,7 +14,7 @@ LICENSE=	gnu-gpl-v3
 
 ARMELF_PREFIX=	${PREFIX}/cross-arm-none-eabi
 
-USE_TOOLS+=	gmake makeinfo
+USE_TOOLS+=	bash:run gmake makeinfo
 USE_LANGUAGES=	c c++
 TOOLS_BROKEN+=	perl # used in do-install for texi2pod
 GNU_CONFIGURE=	yes
@@ -27,6 +27,8 @@ GNU_CONFIGURE_PREFIX=	${ARMELF_PREFIX}
 CONFIGURE_ARGS+=	--disable-werror --target=arm-none-eabi
 CONFIGURE_ARGS+=	--disable-nls
 INFO_FILES=		yes
+
+REPLACE_BASH+=          gdb/gstack-1.in
 
 # Uses all kinds of bashisms but is only needed for testing.
 # If ever necessary, this should be fixed using REPLACE_BASH.
