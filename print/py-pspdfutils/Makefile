@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.29 2025/09/04 11:14:03 adam Exp $
+# $NetBSD: Makefile,v 1.31 2025/09/21 16:06:51 wiz Exp $
 
-DISTNAME=	psutils-3.3.13
+DISTNAME=	psutils-3.3.14
 # renamed from pspdfutils to psutils in 3.3.7
 # TODO: follow suit
 PKGNAME=	${PYPKGPREFIX}-${DISTNAME:S/ps/pspdf/}
